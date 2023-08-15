@@ -20,14 +20,14 @@ img {
 h1 {
     color: #1E1E1E;
     font-weight: 700;
-    font-size: 3.75rem;
+    font-size: 3.25rem;
     text-shadow: 0px 2px 4px rgb(0,0,0,0.40);
 }
 
 h2 {
     color: #009246;
     font-size: 3rem;
-    text-shadow: 0px 2px 4px rgb(0,0,0,0.40);
+    text-shadow: 0px 6px 6px rgb(0,0,0,0.40);
 }
 
 h3 {
@@ -50,34 +50,36 @@ p {
 
 /* CONFIGURACION HEADER GENERAL----------------------*/
 
-.menu {
+
+nav > ul {
     display: flex;
     color: #ffffff;
     align-items: center;
     list-style-type: none;
 }
 
-.links {
+nav > ul > .links {
     display: flex;
     justify-content:space-around;
     width: 100%;
     align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    row-gap: 1rem;
 }
 
 .links a {
     color: #ffffff;
     text-decoration: none;
     font-weight: 700;
-    margin: 0 2rem;
     text-shadow: 0px 2px 4px rgb(0,0,0,0.40);
 }
 
 .artesanal {
     text-align: left;
     font-weight: 700;
-    max-width: 1rem;
+    max-width: 0rem;
     min-width: 8.5rem;
-    margin: 1.25rem 2rem;
     text-shadow: 0px 2px 4px rgb(0,0,0,0.40);
 }
 
@@ -88,11 +90,12 @@ p {
 
 .menu_item:hover {
     scale: 1.1;
+    transition: .3s;
 }
 
 .logo {
-    margin: 0 0.625rem;
-    min-width: 6.25rem;
+    margin: 0 1rem;
+    min-width: 6rem;
 }
 
 .titulo-header {
@@ -117,9 +120,7 @@ footer {
     gap: 2rem;
 }
 
-.logo-footer,
-.sobre-nosotros,
-.ubicacion-mapa {
+.footer-columnas > * {
     flex: 1;
 }
 
@@ -163,8 +164,8 @@ footer {
 }
 
 iframe {
-    width: 16.5rem;
-    height: 12rem;
+    width: 50%;
+    height: 50%;
     border-radius: 20px;
 }
 
@@ -184,6 +185,7 @@ iframe {
 
 .botones-redes a:hover {
     scale: 1.1;
+    transition: .5s;
 }
 
 .boton-instagram,
@@ -213,9 +215,10 @@ iframe {
 
 .wpp {
     position: fixed;
-    right: 2rem;
+    right: 3rem;
     bottom: 2rem;
     width: 3rem;
+    transition: .5s;
 }
 
 .wpp:hover {
@@ -234,6 +237,7 @@ iframe {
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
+    padding-inline: 3rem;
 }
 
 /*INDEX MAIN SECTION 1  -------------------------------------------*/
@@ -243,14 +247,18 @@ iframe {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    margin: 2rem 4rem;
+    margin: 2rem 3rem;
 }
 
 .helados {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 100%;
+    width: 90%;
+}
+
+.helados a {
+    transition: .5s;
 }
 
 .boton-ver {
@@ -263,6 +271,7 @@ iframe {
     width: 6rem;
     font-weight: 700;
     text-align: center;
+    transition: .6s;
 }
 
 .helados a:hover {
@@ -272,6 +281,7 @@ iframe {
 .boton-ver:hover {
     background-color:#009246;
     color: #ffffff;
+
 }
 
 
@@ -288,8 +298,12 @@ iframe {
 /*INDEX MAIN SECTION 3  -------------------------------------------*/
 
 .index-section-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: relative;
     align-items: center;
+    padding-inline: 3rem;
 }
 
 .bandera-top {
@@ -300,8 +314,8 @@ iframe {
 }
 
 .productos {
-    margin-left: 3rem;
     padding-top: 1rem;
+    align-self: flex-start;
 }
 
 .productos-tipos {
@@ -309,7 +323,8 @@ iframe {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-inline: 4rem;
+    width: 80%;
+    margin-inline: 3rem;
 }
 
 .shakes,
@@ -329,6 +344,11 @@ iframe {
     font-weight: 600;
     font-size: 1.5rem;
     text-align: center;
+    transition: .5s;
+}
+
+.productos-texto {
+    font-weight: 700;
 }
 
 .shakes a:hover { 
@@ -357,7 +377,7 @@ iframe {
 .boton-productos { 
     display: flex;
     justify-content: center;
-    padding-bottom: 2.5rem;
+    padding-bottom: 2rem;
 }
 
 .bandera-bottom {
@@ -379,6 +399,7 @@ iframe {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 2rem 3rem;
 }
 
 .te-lo-llevamos {
@@ -386,6 +407,7 @@ iframe {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 1rem;
 }
 
 .delivery,
@@ -405,6 +427,11 @@ iframe {
     justify-content: center;
     flex-direction: row;
     gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.botones-delivery a {
+    transition: .5s;
 }
 
 .boton-peya {
@@ -415,6 +442,7 @@ iframe {
     border-radius: 20px;
     min-width: 10rem;
     min-height: 2.5rem;
+    box-shadow: 1px 4px 6px rgb(0,0,0,0.40);
 }
 
 .boton-delivery-propio {
@@ -427,6 +455,7 @@ iframe {
     border-radius: 20px;
     width: 10rem;
     font-weight: 800;
+    box-shadow: 1px 4px 6px rgb(0,0,0,0.40);
 }
 
 .botones-delivery a:hover {
@@ -517,6 +546,57 @@ iframe {
     background-attachment: fixed;
 }
 
+/*PRODUCTOS MAIN SECTION 1  -------------------------------------------*/
+
+.productos-section-1 {
+    margin: 1rem 3rem;
+    display: flex;
+    justify-content: right;
+}
+
+.contenedor-grid {
+    min-height: 35vh;
+    width: 40%;
+
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    grid-template-areas: 
+        "shakes bombones postres";
+    column-gap: 0.5rem;
+}
+
+.shakes-grid {
+    grid-area: shakes;
+}
+
+.bombones-grid {
+    grid-area: bombones;
+}
+
+.postres-helados-grid{
+    grid-area: postres;
+}
+
+.shakes-grid,
+.bombones-grid,
+.postres-helados-grid {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.texto-grid {
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
 
 
 
@@ -533,6 +613,29 @@ iframe {
     background-attachment: fixed;
 }
 
+/*DELIVERY MAIN SECTION 1  -------------------------------------------*/
 
+.delivery-section-1 {
+    margin: 1rem 3rem;
+    min-height: 100vh;
+}
 
+.delivery-imagenes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}   
 
+.imagen-delivery {
+    border-radius: 30px;
+    flex: 1;
+    max-width: 20%;
+}
+
+.imagen-delivery:hover {
+    scale: 1.04;
+    transition: .5s;
+}
