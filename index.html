@@ -4,93 +4,189 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AUGURI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
     <link rel="shortcut icon" href="./img/logos/logo.png" type="image/x-icon">
 
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
 
 </head>
 
 <body>
     <header class="header-index">
-        <nav>
-        <ul class="menu">
-            <div class="links">
-                <div class="artesanal">
-                    <li>DESDE 1989 <span style="font-weight: 200;">Helado artesanal</span>
-                    </li>
+        <div class="container">
+            <nav class="menu-pc">
+                <ul class="menu">
+                    <div class="links">
+                        <div class="artesanal">
+                            <li>DESDE 1989 
+                                <span style="font-weight: 200;">Helado artesanal</span>
+                            </li>
+                        </div>
+                        <li class="menu_item">
+                            <a href="./pages/nosotros.html" target="_blank"> NOSOTROS</a>
+                        </li>
+                        <li class="menu_item">
+                            <a href="#mapa"> UBICACION</a>
+                        </li>
+                    </div>
+                    <div class="logo">
+                        <li class="menu_item active">
+                            <a href="./index.html" target="_blank"> 
+                                <img src="./img/logos/logo1.png" alt="logo auguri">
+                            </a>
+                        </li>
+                    </div>
+                    <div class="links">
+                        <li class="menu_item">
+                            <a href="./pages/sabores.html" target="_blank"> SABORES</a>
+                        </li>
+                        <li class="menu_item">
+                            <a href="./pages/productos.html" target="_blank"> PRODUCTOS</a>
+                        </li>
+                        <li class="menu_item">
+                            <a href="./pages/delivery.html" target="_blank"> DELIVERY</a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="menu-mobile">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container mobile">
+                    <a class="navbar-brand" href="./index.html" target="_blank">
+                        <img class="logo-mobile" src="./img/logos/logo1.png" alt="logo auguri">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html" target="_blank">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./pages/nosotros.html" target="_blank">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#mapa">UBICACIÓN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/sabores.html" target="_blank">SABORES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/productos.html" target="_blank">PRODUCTOS</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="./pages/delivery.html" target="_blank">DELIVERY</a>
+                        </li>
+                    </ul>
+                    </div>
                 </div>
-                <li class="menu_item">
-                    <a href="./pages/nosotros.html" target="_blank"> NOSOTROS</a>
-                </li>
-                <li class="menu_item">
-                    <a href="#mapa"> UBICACION</a>
-                </li>
-            </div>
-            <div class="logo">
-                <li class="menu_item active">
-                    <a href="./index.html" target="_blank"> <img src="./img/logos/logo1.png" alt="logo auguri"></a>
-                </li>
-            </div>
-            <div class="links">
-                <li class="menu_item">
-                    <a href="./pages/sabores.html" target="_blank"> SABORES</a>
-                </li>
-                <li class="menu_item">
-                    <a href="./pages/productos.html" target="_blank"> PRODUCTOS</a>
-                </li>
-                <li class="menu_item">
-                    <a href="./pages/delivery.html" target="_blank"> DELIVERY</a>
-                </li>
-            </div>
-        </ul>
-        </nav>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section class="index-section-1">
-            <h1 class="nuestos-sabores"> NUESTROS SABORES</h1>
-            <div class="helados"> 
-                <a href="./pages/sabores.html" target="_blank"> <img src="./img/Sabores/sabor-crema.png" alt="cremas"> 
-                </a>
-                <a href="./pages/sabores.html" target="_blank"> <img src="./img/Sabores/sabor chocolate.png" alt="chocolate">
-                </a>
-                <a href="./pages/sabores.html" target="_blank"> <img src="./img/Sabores/sabor dulce de leche.png" alt="dulce-de-leche">
-                </a>
-                <a href="./pages/sabores.html" target="_blank"> <img src="./img/Sabores/sabor frutal.png" alt="frutales">
-                </a>
-            </div>
-            <a class="boton-ver" href="./pages/sabores.html" target="_blank">Ver</a>
-        </section>
+        <div class="container">
+            <section class="index-section-1">
+                    <h1 class="nuestros-sabores"> NUESTROS SABORES</h1>
+                    <div class="helados"> 
+                        <a class="enlace-cremas" href="./pages/sabores.html" target="_blank"> <img src="./img/Sabores/sabor-crema.png" alt="cremas">
+                            <h3 class="sabores-helados">Cremas</h3>
+                        </a>
+                        <a class="enlace-chocolates" href="./pages/sabores.html" target="_blank"> <img src="./img/Sabores/sabor chocolate.png" alt="chocolate">
+                            <h3 class="sabores-helados">Chocolate</h3>
+                        </a>
+                        <a class="enlace-dulces" href="./pages/sabores.html" target="_blank"> <img src="./img/Sabores/sabor-dulce.png" alt="dulce-de-leche">
+                            <h3 class="sabores-helados">Dulces de leche</h3>
+                        </a>
+                        <a class="enlace-frutales" href="./pages/sabores.html" target="_blank"> <img src="./img/Sabores/sabor-frutal.png" alt="frutales">
+                            <h3 class="sabores-helados">Frutales</h3>
+                        </a>
+                    </div>
+                    <a class="boton-ver" href="./pages/sabores.html" target="_blank">Ver</a>
+            </section>
+        </div>
+
+            <section class="index-section-1-mobile">
+                <h1 class="nuestros-sabores"> NUESTROS SABORES</h1>
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./img/Sabores/sabor-crema.png" class="d-block w-100" alt="cremas">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/Sabores/sabor chocolate.png" class="d-block w-100" alt="chocolates">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/Sabores/sabor-dulce.png" class="d-block w-100" alt="dulces">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/Sabores/sabor-frutal.png" class="d-block w-100" alt="frutales">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                  <a class="boton-ver" href="./pages/sabores.html" target="_blank">Ver</a>
+            </section>
+
 
         <section class="index-section-2">
         </section>
 
+        
         <section class="index-section-3">
             <img class="bandera-top" src="./img/bandera.png" alt="bandera-italia">
-                <h1 class="productos"> PRODUCTOS</h1>
-                <div class="productos-tipos"> 
-                    <div class="shakes">
-                        <a href="./pages/productos.html" target="_blank"><img class="img-shakes" src="./img/postres/shakes.png" alt="milk-shakes"> <p class="productos-texto">Shakes</p>
-                        </a>
-                    </div>
-                    <div class="bombones">
-                        <a href="./pages/productos.html" target="_blank"><img class="img-bombones" src="./img/postres/bombones.png" alt="bombones"> <p class="productos-texto">Bombones</p> 
-                        </a>
-                    </div>
-                    <div class="postres-helados">
-                        <a href="./pages/productos.html" target="_blank"><img class="img-postres" src="./img/postres/postre-helado.png" alt="postres-helados"> <p class="productos-texto">Postres helados</p>
-                        </a>
+                <div class="container">
+                    <h1 class="productos"> PRODUCTOS</h1>
+                    <div class="productos-tipos"> 
+                        <div class="shakes">
+                            <a href="./pages/productos.html" target="_blank"><img class="img-shakes" src="./img/postres/shakes.png" alt="milk-shakes"> 
+                                <p class="productos-texto">Shakes</p>
+                            </a>
+                        </div>
+
+                        <div class="bombones">
+                            <a href="./pages/productos.html" target="_blank"><img   class="img-bombones" src="./img/postres/bombones.png" alt="bombones"> 
+                                <p class="productos-texto">Bombones</p> 
+                            </a>
+                        </div>
+
+                        <div class="postres-helados">
+                            <a href="./pages/productos.html" target="_blank"><img class="img-postres" src="./img/postres/postre-helado.png" alt="postres-helados"> 
+                                <p class="productos-texto">Postres helados</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="boton-productos">
-                    <a class="boton-ver" href="./pages/productos.html" target="_blank">Ver</a>
-                </div>
+                    <div class="boton-productos">
+                        <a class="boton-ver" href="./pages/productos.html" target="_blank">Ver</a>
+                    </div>
             <img class="bandera-bottom" src="./img/bandera.png" alt="bandera-italia">
         </section>
 
+
         <section class="index-section-4">
             <div class="te-lo-llevamos">
-                <h1 class="delivery">¿RETIRÁS?</h1>
+                <h1 class="retiras">¿RETIRÁS?</h1>
                 <h1 class="llevamos">¿LO LLEVAMOS?</h1>
                 <h2 class="pedido">HACE TU PEDIDO POR</h2>
             </div>
@@ -101,49 +197,59 @@
                 <a class="boton-delivery-propio" href="https://wa.me/1165233257" target="_blank">Delivery propio</a>
             </div>
         </section>
-
     </main>
 
 
     <footer id="mapa">
-        
-        <div class="footer-columnas">
-            <div class="logo-footer">
-                <img class="img-logofooter" src="./img/logos/logo1.png" alt="logo auguri">
-                <div class="desde">DESDE 1989</div>
-                <div class="helado-artesanal"><span style="font-weight: 200;">Helado artesanal</span>
-                </div> 
-            </div>
-    
-            <div class="sobre-nosotros">
-                <h3 class="nosotros-footer">SOBRE NOSOTROS</h3>
-                <P class="parrafo-footer">En el pintoresco corazón del barrio Ciudad Jardín, en el año 1989, nacía una pequeña heladería con una gran pasión por los helados. En Auguri nos enorgullecemos de llevar adelante la tradición de la heladería artesanal. Nuestra historia se ha entrelazado con la de Ciudad Jardín, y esperamos que continúe por muchas generaciones más.</P><br>
-                <P class="parrafo-footer">¡Gracias por ser parte de nuestra historia !</P>
-                <div class="botones-redes">
-                        <a class="boton-instagram" href="https://www.instagram.com/augurihelados/" target="_blank"><img class="imagen-instagram" src="./img/redes/instagram.png" alt="instagram">
-                        </a>
+        <div class="container">
+            <div class="footer-columnas">
 
-                        <a class="boton-facebook" href="https://www.facebook.com/augurihelados/" target="_blank"><img class="imagen-facebook" src="./img/redes/facebook.png" alt="facebook">
-                        </a>
-
-                        <a class="boton-pedidosya" href="https://www.pedidosya.com.ar/restaurantes/3-de-febrero/auguri-helados-menu?origin=shop_list" target="_blank"><img class="imagen-peya"src="./img/redes/pedidosya.png" alt="pedidosya">
-                        </a>
+                <div class="logo-footer">
+                    <img class="img-logofooter" src="./img/logos/logo1.png" alt="logo auguri">
+                    <div class="desde">DESDE 1989</div>
+                    <div class="helado-artesanal">Helado artesanal</div> 
                 </div>
+        
+                <div class="sobre-nosotros">
+                    <h3 class="nosotros-footer">SOBRE NOSOTROS</h3>
+                    <P class="parrafo-footer">En el pintoresco corazón del barrio Ciudad Jardín, en el año 1989, nacía una pequeña heladería con una gran pasión por los helados. En Auguri nos enorgullecemos de llevar adelante la tradición de la heladería italiana artesanal.</P><br>
+                    <P class="parrafo-footer">¡Gracias por ser parte de nuestra historia !</P>
+
+                </div>
+        
+                <div class="ubicacion-mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0805184510937!2d-58.59388773851657!3d-34.602125397624754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb853c3e37c93%3A0xaed37e59022c8b3d!2sAuguri%20Helados!5e0!3m2!1ses-419!2sar!4v1690230410272!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" target="_blank"></iframe>
+                    <p class="parrafo-footer direccion">Encontranos en Edificio Terrazas Ciudad Jardín Paseo de Compras, Wernicke 3099 Ciudad Jardín.<br>Teléfono: 011 4758-7329</p>
+                </div>
+
             </div>
-    
-            <div class="ubicacion-mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0805184510937!2d-58.59388773851657!3d-34.602125397624754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb853c3e37c93%3A0xaed37e59022c8b3d!2sAuguri%20Helados!5e0!3m2!1ses-419!2sar!4v1690230410272!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" target="_blank"></iframe>
-                <p class="parrafo-footer direccion">Encontranos en Edificio Terrazas Ciudad Jardín Paseo de Compras, Wernicke 3099 Ciudad Jardín.<br>Teléfono: 011 4758-7329</p>
+
+            <div class="botones-redes">
+                <a class="boton-instagram" href="https://www.instagram.com/augurihelados/" target="_blank">
+                    <i class="bi bi-instagram"></i>
+                </a>
+
+                <a class="boton-facebook" href="https://www.facebook.com/augurihelados/" target="_blank">
+                    <i class="bi bi-facebook"></i>
+                </a>
+
+                <a class="boton-pedidosya" href="https://www.pedidosya.com.ar/restaurantes/3-de-febrero/auguri-helados-menu?origin=shop_list" target="_blank">
+                    <i class="bi bi-bicycle"></i>
+                </a>
             </div>
         </div>
 
         <div class="powered">
-            <p>Powered by <span style="font-weight: 700;">Branko Silva</span></p>
+            <p class="powered-texto">Powered by <span style="font-weight: 700;">Branko Silva</span>
+            </p>
         </div>
 
+        <a href="https://wa.me/1165233257" target="_blank">
+            <i class="bi bi-whatsapp"></i>
+        </a>
     </footer>
-    <a href="https://wa.me/1165233257" target="_blank">
-        <img class="wpp" src="./img/boton wp/wp.png" alt="whatsapp"></a>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>   
 </body>
 </html>

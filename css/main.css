@@ -22,33 +22,38 @@ h1 {
     font-weight: 700;
     font-size: 3.25rem;
     text-shadow: 0px 2px 4px rgb(0,0,0,0.40);
+    line-height: unset;
 }
 
 h2 {
     color: #009246;
     font-size: 3rem;
     text-shadow: 0px 6px 6px rgb(0,0,0,0.40);
+    line-height: unset;
 }
 
 h3 {
     font-weight: 600;
     font-size: 2rem;
     text-shadow: 0px 2px 4px rgb(0,0,0,0.40);
+    line-height: unset;
+    margin-bottom: 0 !important;
 }
 
 p {
     font-weight: 400;
     font-size: 1rem;
     color: #1E1E1E;
+    margin-bottom: 0 !important;
 }
 
 .parrafo-footer {
     font-weight: 200;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     color: #ffffff;
 }
 
-/* CONFIGURACION HEADER GENERAL----------------------*/
+/* CONFIGURACION HEADER GENERAL PC----------------------*/
 
 
 nav > ul {
@@ -56,6 +61,9 @@ nav > ul {
     color: #ffffff;
     align-items: center;
     list-style-type: none;
+    margin-bottom: 0 !important;
+    padding-left: 0 !important;
+
 }
 
 nav > ul > .links {
@@ -64,6 +72,13 @@ nav > ul > .links {
     width: 100%;
     align-items: center;
     gap: 1rem;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+}
+
+nav > ul > .logo {
+    display: flex;
+    padding-inline: 1rem;
     flex-wrap: wrap;
     row-gap: 1rem;
 }
@@ -93,10 +108,6 @@ nav > ul > .links {
     transition: .3s;
 }
 
-.logo {
-    margin: 0 1rem;
-    min-width: 6rem;
-}
 
 .titulo-header {
     color: #ffffff;
@@ -105,41 +116,97 @@ nav > ul > .links {
     top: 75%;
 }
 
+/* CONFIGURACION HEADER GENERAL MOBILE----------------------*/
+
+.container.mobile {
+    padding-right: calc(var(--bs-gutter-x) * 2.5);
+    padding-left: calc(var(--bs-gutter-x) * 2.5);
+}
+
+.logo-mobile {
+    max-width: 30%;
+}
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 0.1;
+}
+
+.navbar-toggler {
+    background-color: #ffffff;
+    color: #009246;
+}
+
+.navbar {
+    --bs-navbar-toggler-padding-y: 0.25rem;
+    --bs-navbar-toggler-padding-x: 0.40rem;
+    --bs-navbar-toggler-font-size: none;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: rgb(0 146 87);
+}
+
+.navbar-nav {
+    --bs-nav-link-hover-color: rgb(239 4 4);
+    align-items: flex-end;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+
 /* CONFIGURACION FOOOTER GENERAL---------------------------*/
 
 footer {
     background-color: #1E1E1E;
     position: relative;
     color: #ffffff;
-    padding-top: 2rem;
+    padding-top: 2rem;  
 }
 
 .footer-columnas {
-    padding: 1rem 4rem;
     display: flex;
+    justify-content: center;
+    align-items: flex-start;
     gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .footer-columnas > * {
     flex: 1;
 }
 
+
 /* CONFIGURACION FOOOTER COLUMNA 1---------------------------*/
 
 .logo-footer {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-.desde,
-.helado-artesanal {
+.desde {
     font-weight: 700;
     text-shadow: 0px 2px 4px rgb(0,0,0,0.40);
+    text-align: center;
+}
+
+.helado-artesanal {
+    font-weight: 200;
+    text-shadow: 0px 2px 4px rgb(0,0,0,0.40);
+    text-align: center;
 }
 
 .img-logofooter {
-    width: 32%;
+    width: 40%;
     margin-bottom: 1rem;
 }
 
@@ -164,13 +231,14 @@ footer {
 }
 
 iframe {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    max-height: 40vh;
     border-radius: 20px;
 }
 
 .parrafo-footer.direccion {
     padding-inline: 2.2rem;
+    text-align: center;
 }
 
 /* CONFIGURACION FOOOTER REDES---------------------------*/
@@ -180,12 +248,13 @@ iframe {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 4rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
 }
 
 .botones-redes a:hover {
     scale: 1.1;
-    transition: .5s;
+    transition: .2s;
 }
 
 .boton-instagram,
@@ -193,35 +262,37 @@ iframe {
 .boton-pedidosya {
     margin-inline: 0.2rem;
     margin-bottom: 1rem;
-    width: 1.8rem;
 }
 
-.imagen-instagram,
-.imagen-facebook,
-.imagen-peya {
-    border-radius: 6px;
+.bi.bi-facebook,
+.bi.bi-instagram,
+.bi.bi-bicycle {
+    color: #ffffff;
 }
 
 .powered {
-    position: absolute;
-    top: 100%;
     background-color: #009246;
     width: 100%;
     text-align: center;
     color: #ffffff;
 }
 
-/* BOTON WPP ------------------------------------------------*/
-
-.wpp {
-    position: fixed;
-    right: 3rem;
-    bottom: 2rem;
-    width: 3rem;
-    transition: .5s;
+.powered-texto {
+    margin-bottom: 0rem;
 }
 
-.wpp:hover {
+/* BOTON WPP ------------------------------------------------*/
+
+.bi.bi-whatsapp {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    transition: .2s;
+    color: #25d366;
+    font-size: 2rem;
+}
+
+.bi.bi-whatsapp:hover {
     scale: 1.1;
 }
 
@@ -237,7 +308,6 @@ iframe {
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
-    padding-inline: 3rem;
 }
 
 /*INDEX MAIN SECTION 1  -------------------------------------------*/
@@ -247,18 +317,69 @@ iframe {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    margin: 2rem 3rem;
+    margin-block: 2rem;
+}
+
+.nuestros-sabores {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 0 !important;
+    padding-inline: 3rem;
 }
 
 .helados {
-    display: flex;
-    flex-direction: row;
     justify-content: center;
-    width: 90%;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "enlace-cremas enlace-chocolates enlace-dulces enlace-frutales";
+}
+
+.enlace-cremas {
+    grid-area: enlace-cremas;
+}
+
+.enlace-chocolates {
+    grid-area: enlace-chocolates;
+}
+
+.enlace-dulces {
+    grid-area: enlace-dulces;
+}
+
+.enlace-frutales {
+    grid-area: enlace-frutales;
+}
+
+.enlace-cremas,
+.enlace-chocolates,
+.enlace-dulces,
+.enlace-frutales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.sabores-helados {
+    font-size: 1.5rem;
+    color: #1E1E1E;
+    text-shadow: 0px 2px 2px rgb(0,0,0,0.40);
 }
 
 .helados a {
     transition: .5s;
+}
+
+.helados a:hover {
+    scale: 1.05;
 }
 
 .boton-ver {
@@ -274,16 +395,15 @@ iframe {
     transition: .6s;
 }
 
-.helados a:hover {
-    scale: 1.05;
-}
-
 .boton-ver:hover {
     background-color:#009246;
-    color: #ffffff;
-
+    color: #ffffff;  
 }
 
+.index-section-1-mobile {
+    display: none;
+    gap: 2rem;
+}
 
 /*INDEX MAIN SECTION 2  -------------------------------------------*/
 
@@ -303,7 +423,6 @@ iframe {
     justify-content: center;
     position: relative;
     align-items: center;
-    padding-inline: 3rem;
 }
 
 .bandera-top {
@@ -316,6 +435,7 @@ iframe {
 .productos {
     padding-top: 1rem;
     align-self: flex-start;
+    margin-bottom: 0 !important;
 }
 
 .productos-tipos {
@@ -323,8 +443,8 @@ iframe {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 80%;
-    margin-inline: 3rem;
+    width: 100%;
+    padding-inline: 6rem;
 }
 
 .shakes,
@@ -332,23 +452,25 @@ iframe {
 .postres-helados {
     display: flex;
     flex-direction: column;
-    width: 25%;
+    align-items: center;
+    justify-content: center;
 }
 
 .shakes a,
 .bombones a,
 .postres-helados a {
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    color: #1E1E1E;
-    font-weight: 600;
-    font-size: 1.5rem;
-    text-align: center;
     transition: .5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .productos-texto {
-    font-weight: 700;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px rgb(0,0,0,0.40);
+    font-size: 1.5rem;
 }
 
 .shakes a:hover { 
@@ -361,6 +483,10 @@ iframe {
 
 .postres-helados a:hover { 
     scale: 1.05;
+}
+
+.w-100 {
+    width: unset !important;
 }
 
 .img-shakes,
@@ -410,16 +536,25 @@ iframe {
     margin-bottom: 1rem;
 }
 
-.delivery,
-.llevamos {
-    font-size: 4.75rem;
+.retiras {
+    margin-bottom: -8%;
 }
 
-.delivery {
-    margin-bottom: -3rem;
-}
 .llevamos {
-    margin-bottom: -1.5rem;
+    margin-bottom: -4%;
+}
+
+.pedido {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 0 !important;
+    margin-top: unset;
+}
+
+.retiras,
+.llevamos {
+    font-size: 4.75rem;
+    text-align: center;
 }
 
 .botones-delivery {
@@ -427,7 +562,7 @@ iframe {
     justify-content: center;
     flex-direction: row;
     gap: 1rem;
-    margin-bottom: 1rem;
+    flex-wrap: wrap;
 }
 
 .botones-delivery a {
@@ -481,12 +616,15 @@ iframe {
 .nosotros-section-1 {
     display: flex;
     flex-direction: row;
-    margin-inline: 3rem;
+    justify-content: center;
+    align-items: center;
     margin-block: 3rem;
 }
 
 .nosotros-titulo {
     line-height: 3rem;
+    margin-bottom: 0 !important;
+    font-weight: 700;
 }
 
 .texto-nosotros,
@@ -549,22 +687,18 @@ iframe {
 /*PRODUCTOS MAIN SECTION 1  -------------------------------------------*/
 
 .productos-section-1 {
-    margin: 1rem 3rem;
+    padding: 1rem 3rem;
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
+    align-items: flex-start;
 }
 
 .contenedor-grid {
-    min-height: 35vh;
-    width: 40%;
+    width: 50%;
 
-    display: grid;
-    place-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-
-    grid-template-areas: 
-        "shakes bombones postres";
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
     column-gap: 0.5rem;
 }
 
@@ -585,7 +719,7 @@ iframe {
 .postres-helados-grid {
     text-decoration: none;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
 }
@@ -616,8 +750,12 @@ iframe {
 /*DELIVERY MAIN SECTION 1  -------------------------------------------*/
 
 .delivery-section-1 {
-    margin: 1rem 3rem;
-    min-height: 100vh;
+    padding-block: 2rem;
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .delivery-imagenes {
@@ -626,7 +764,7 @@ iframe {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }   
 
 .imagen-delivery {
@@ -638,4 +776,171 @@ iframe {
 .imagen-delivery:hover {
     scale: 1.04;
     transition: .5s;
+}
+
+
+
+
+/* MEDIAAAAA QUERIIIIIIIIIIIIIEEEEES */
+
+
+
+/* MEDIA QUERIES MAX-WIDTH 992*/
+
+@media screen and (max-width: 992px) {
+
+    /*INDEX NAV MOBILE-PC*/
+    .menu-mobile {
+        display: block;
+    }
+
+    .menu-pc {
+        display: none;
+    }
+
+    /*INDEX SECTION 1*/
+    .helados { 
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "enlace-cremas enlace-chocolates" 
+        "enlace-dulces enlace-frutales";
+        }
+
+    /*INDEX SECTION 3*/
+        .productos-tipos {
+            padding-inline: unset;
+        }
+    
+    /*INDEX FOOTER*/
+        .parrafo-footer.direccion {
+            padding-inline: unset;
+        }
+
+
+    /*NOSOTROS SECTION 1*/
+
+    .imagen-nosotros {
+        display: none;
+    }
+
+    .texto-nosotros {
+        width: 100%;
+    }
+
+    
+}
+
+
+
+/* MEDIA QUERIES MAX-WIDTH 768*/
+
+@media screen and (max-width: 767px) {
+
+    /* INDEX SABORES */
+
+    .nuestros-sabores {
+        font-size: 2.25rem;
+    }
+
+    .helados {
+        padding-inline: 2rem;
+    }
+
+    /* INDEX PRODUCTOS*/
+
+    .productos-texto {
+        font-size: 1rem;
+    }
+
+    .productos {
+        font-size: 2.25rem;
+    }
+
+    /* INDEX DELIVERY */
+
+    .retiras, .llevamos {
+        font-size: 3.7rem;
+    }
+
+    .pedido {
+        font-size: 2rem;
+    }
+
+    /* INDEX FOOTER*/
+    .footer-columnas {
+        flex-direction: column;
+        align-items: center;
+        padding-inline: 3rem;
+    }
+
+    .nosotros-footer,
+    .parrafo-footer {
+        text-align: center;
+    }
+}
+
+
+
+/* MEDIA QUERIES MAX-WIDTH 576*/
+
+@media screen and (max-width: 576px) {
+
+    /* INDEX-NOSOTROS-SABORES-PRODUCTOS-DELIVERY*/
+
+    .container {
+        padding-inline: 3rem;
+    }
+
+    .container.mobile {
+        padding-right: calc(var(--bs-gutter-x) * 1);
+        padding-left: calc(var(--bs-gutter-x) * 1);
+    }
+
+     /*INDEX SECTION 1*/
+    .index-section-1 { 
+        display: none;
+        }
+
+    .index-section-1-mobile {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-block: 2rem;
+    }
+
+        /* INDEX DELIVERY */
+
+        .retiras, .llevamos {
+            font-size: 2.3rem;
+        }
+    
+        .pedido {
+            font-size: 1.7rem;
+        }
+
+
+        /* NOSOTROS TITULO HEADER */
+
+        .titulo-header {
+            margin: 0 0rem;
+            top: 75%;
+            font-size: 2.75rem;
+        }
+
+        .nosotros-titulo {
+            line-height: 2rem;
+            font-size: 2rem;
+        }
+
+        .auguri-titulo {
+            font-size: 1.8rem;
+        }
+
+        /* DELIVERY SECTION 1 */
+
+        .imagen-delivery {
+            max-width: 35%;
+    }
 }
