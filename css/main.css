@@ -161,6 +161,10 @@ nav > ul > .logo {
     display: none;
 }
 
+.container.mobile {
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+}
 
 /* CONFIGURACION FOOOTER GENERAL---------------------------*/
 
@@ -812,27 +816,52 @@ iframe {
         display: none;
     }
 
+    /*HEADER */
+
+    .titulo-header {
+        margin: 0 0rem;
+    }
+
     /*INDEX SECTION 1*/
+
+    .nuestros-sabores {
+        font-size: 2.5rem;
+    }
+
+    .sabores-helados {
+        font-size: 1.4rem;
+    }    
+
     .helados { 
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr 1fr;
         grid-template-areas: 
         "enlace-cremas enlace-chocolates" 
         "enlace-dulces enlace-frutales";
+        padding-inline: 7rem;
+        gap: 4rem;
         }
 
     /*INDEX SECTION 3*/
-        .productos-tipos {
-            padding-inline: unset;
-        }
-    
-    /*INDEX FOOTER*/
-        .parrafo-footer.direccion {
-            padding-inline: unset;
-        }
 
+    .productos {
+        font-size: 2.5rem;
+    }
 
-    /*NOSOTROS SECTION 1*/
+    .productos-tipos {
+        padding-inline: 4rem;
+    }
+
+    .productos-texto {
+        font-size: 1.4rem
+    }
+
+/*INDEX FOOTER*/
+    .parrafo-footer.direccion {
+        padding-inline: unset;
+    }
+
+/*NOSOTROS SECTION 1*/
 
     .imagen-nosotros {
         display: none;
@@ -840,21 +869,24 @@ iframe {
 
     .texto-nosotros {
         width: 100%;
-    }
-
-    
+    } 
 }
-
 
 
 /* MEDIA QUERIES MAX-WIDTH 768*/
 
 @media screen and (max-width: 767px) {
 
+    /* INDEX-NOSOTROS-SABORES-PRODUCTOS-DELIVERY*/
+
     /* INDEX SABORES */
 
     .nuestros-sabores {
         font-size: 2.25rem;
+    }
+
+    .sabores-helados {
+        font-size: 1.2rem;
     }
 
     .helados {
@@ -926,35 +958,35 @@ iframe {
 
         /* INDEX DELIVERY */
 
-        .retiras, .llevamos {
-            font-size: 2.3rem;
-        }
+    .retiras, .llevamos {
+        font-size: 2.3rem;
+    }
     
-        .pedido {
-            font-size: 1.7rem;
-        }
+    .pedido {
+        font-size: 1.7rem;
+    }
 
 
-        /* NOSOTROS TITULO HEADER */
+    /* NOSOTROS TITULO HEADER */
 
-        .titulo-header {
-            margin: 0 0rem;
-            top: 75%;
-            font-size: 2.75rem;
-        }
+    .titulo-header {
+        margin: 0 0rem;
+        top: 75%;
+        font-size: 2.75rem;
+    }
 
-        .nosotros-titulo {
-            line-height: 2rem;
-            font-size: 2rem;
-        }
+    .nosotros-titulo {
+        line-height: 2rem;
+        font-size: 2rem;
+    }
 
-        .auguri-titulo {
-            font-size: 1.8rem;
-        }
+    .auguri-titulo {
+        font-size: 1.8rem;
+    }
 
-        /* DELIVERY SECTION 1 */
+    /* DELIVERY SECTION 1 */
 
-        .imagen-delivery {
-            max-width: 35%;
+    .imagen-delivery {
+        max-width: 35%;
     }
 }
