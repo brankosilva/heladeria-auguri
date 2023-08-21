@@ -879,6 +879,13 @@ iframe {
 
     /* INDEX-NOSOTROS-SABORES-PRODUCTOS-DELIVERY*/
 
+    
+    /*FOOTER INDEX-NOSOTROS-SABORES-PRODUCTOS-DELIVERY*/
+
+    .logo-footer {
+        order: 1;
+    }
+
     /* INDEX SABORES */
 
     .nuestros-sabores {
@@ -935,13 +942,14 @@ iframe {
     /* INDEX-NOSOTROS-SABORES-PRODUCTOS-DELIVERY*/
 
     .container {
-        padding-inline: 3rem;
+        padding-inline: 2rem;
     }
 
     .container.mobile {
         padding-right: calc(var(--bs-gutter-x) * 1);
         padding-left: calc(var(--bs-gutter-x) * 1);
     }
+
 
      /*INDEX SECTION 1*/
     .index-section-1 { 
@@ -954,6 +962,11 @@ iframe {
         flex-direction: column;
         align-items: center;
         margin-block: 2rem;
+    }
+
+    /*INDEX SECTION 3*/
+    .productos-tipos {
+        padding-inline: 0rem;
     }
 
         /* INDEX DELIVERY */
@@ -989,4 +1002,11 @@ iframe {
     .imagen-delivery {
         max-width: 35%;
     }
+}
+
+@media screen and (max-width: 430px) {
+    .container {
+        padding-inline: 0.5rem;
+    }
+
 }
