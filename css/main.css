@@ -398,6 +398,10 @@ iframe {
     scale: 1.05;
 }
 
+.helados a:hover h3 {
+    color: #009246;
+}
+
 .boton-ver {
     text-decoration: none;
     color: #009246;
@@ -489,16 +493,16 @@ iframe {
     font-size: 1.5rem;
 }
 
-.shakes a:hover { 
+.shakes a:hover,
+.bombones a:hover,
+.postres-helados a:hover {
     scale: 1.05;
 }
 
-.bombones a:hover { 
-    scale: 1.05;
-}
-
-.postres-helados a:hover { 
-    scale: 1.05;
+.shakes a:hover p,
+.bombones a:hover p,
+.postres-helados a:hover p {
+    color: #009246;
 }
 
 .w-100 {
