@@ -52,7 +52,7 @@ p {
     margin-bottom: 0 !important;
 }
 
-.parrafo-footer {
+.footer_columnas_parrafo {
     font-weight: 200;
     font-size: 0.85rem;
     color: #ffffff;
@@ -72,7 +72,7 @@ nav > ul {
 
 }
 
-nav > ul > .links {
+nav > ul > .menu_pc_links {
     display: flex;
     justify-content:space-around;
     width: 100%;
@@ -82,21 +82,21 @@ nav > ul > .links {
     row-gap: 1rem;
 }
 
-nav > ul > .logo {
+nav > ul > .menu_pc_links--logo {
     display: flex;
     padding-inline: 1rem;
     flex-wrap: wrap;
     row-gap: 1rem;
 }
 
-.links a {
+.menu_pc_links a {
     color: #ffffff;
     text-decoration: none;
     font-weight: 700;
     text-shadow: 0px 2px 4px rgb(0,0,0,0.40);
 }
 
-.artesanal {
+.menu_pc_links--artesanal {
     text-align: left;
     font-weight: 700;
     max-width: 0rem;
@@ -104,12 +104,12 @@ nav > ul > .logo {
     text-shadow: 0px 2px 4px rgb(0,0,0,0.40);
 }
 
-.menu_item.active a,
-.menu_item a:hover {
+.menu_pc_links_item.active a,
+.menu_pc_links_item a:hover {
     text-decoration: underline;
 }
 
-.menu_item:hover {
+.menu_pc_links_item:hover {
     scale: 1.1;
     transition: .3s;
 }
@@ -163,7 +163,7 @@ nav > ul > .logo {
     font-family: 'Poppins', sans-serif;
 }
 
-.menu-mobile {
+.menu_mobile {
     display: none;
 }
 
@@ -181,7 +181,7 @@ footer {
     padding-top: 2rem;  
 }
 
-.footer-columnas {
+.footer_columnas {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -189,51 +189,51 @@ footer {
     flex-wrap: wrap;
 }
 
-.footer-columnas > * {
+.footer_columnas > * {
     flex: 1;
 }
 
 
 /* CONFIGURACION FOOOTER COLUMNA 1---------------------------*/
 
-.logo-footer {
+.footer_columnas_1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.desde {
+.footer_columnas_1_texto_negrita {
     font-weight: 700;
     text-shadow: 0px 2px 4px rgb(0,0,0,0.40);
     text-align: center;
 }
 
-.helado-artesanal {
+.footer_columnas_1_texto {
     font-weight: 200;
     text-shadow: 0px 2px 4px rgb(0,0,0,0.40);
     text-align: center;
 }
 
-.img-logofooter {
+.footer_columnas_1_img {
     width: 40%;
     margin-bottom: 1rem;
 }
 
 /* CONFIGURACION FOOOTER COLUMNA 2---------------------------*/
 
-.sobre-nosotros {
+.footer_columnas_2 {
     display: flex;
     flex-direction: column;
 }
 
-.nosotros-footer {
+.footer_columnas_2_titulo {
     margin-bottom: 0.5rem;
 }
 
 /* CONFIGURACION FOOOTER COLUMNA 3---------------------------*/
 
-.ubicacion-mapa {
+.footer_columnas_3{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -246,14 +246,14 @@ iframe {
     border-radius: 20px;
 }
 
-.parrafo-footer.direccion {
+.footer_columnas_parrafo.direccion {
     padding-inline: 2.2rem;
     text-align: center;
 }
 
 /* CONFIGURACION FOOOTER REDES---------------------------*/
 
-.botones-redes {
+.botones_redes {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -262,14 +262,12 @@ iframe {
     font-size: 1.5rem;
 }
 
-.botones-redes a:hover {
+.botones_redes a:hover {
     scale: 1.1;
     transition: .2s;
 }
 
-.boton-instagram,
-.boton-facebook,
-.boton-pedidosya {
+.botones_redes_boton {
     margin-inline: 0.2rem;
     margin-bottom: 1rem;
 }
@@ -287,7 +285,7 @@ iframe {
     color: #ffffff;
 }
 
-.powered-texto {
+.powered_texto {
     margin-bottom: 0rem;
 }
 
@@ -330,7 +328,7 @@ iframe {
     margin-block: 2rem;
 }
 
-.nuestros-sabores {
+.index-section-1_titulo {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -338,7 +336,7 @@ iframe {
     padding-inline: 3rem;
 }
 
-.helados {
+.index-section-1_helados {
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -348,29 +346,26 @@ iframe {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
     grid-template-areas: 
-        "enlace-cremas enlace-chocolates enlace-dulces enlace-frutales";
+        "cremas chocolates dulces frutales";
 }
 
-.enlace-cremas {
-    grid-area: enlace-cremas;
+.index-section-1_helados.cremas {
+    grid-area: cremas;
 }
 
-.enlace-chocolates {
-    grid-area: enlace-chocolates;
+.index-section-1_helados.chocolates {
+    grid-area: chocolates;
 }
 
-.enlace-dulces {
-    grid-area: enlace-dulces;
+.index-section-1_helados.dulces {
+    grid-area: dulces;
 }
 
-.enlace-frutales {
-    grid-area: enlace-frutales;
+.index-section-1_helados.frutales {
+    grid-area: frutales;
 }
 
-.enlace-cremas,
-.enlace-chocolates,
-.enlace-dulces,
-.enlace-frutales {
+.index-section-1_helados_sabores {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -378,7 +373,7 @@ iframe {
     text-decoration: none;
 }
 
-.sabores-helados {
+.index-section-1_helados_sabores_subtitulo {
     font-size: 1.5rem;
     color: #1E1E1E;
     text-shadow: 0px 2px 2px rgb(0,0,0,0.40);
@@ -396,15 +391,15 @@ iframe {
     bottom: -42px;
 }
 
-.helados a {
+.index-section-1_helados a {
     transition: .5s;
 }
 
-.helados a:hover {
+.index-section-1_helados a:hover {
     scale: 1.05;
 }
 
-.helados a:hover h3 {
+.index-section-1_helados a:hover h3 {
     color: #009246;
 }
 
@@ -451,20 +446,20 @@ iframe {
     align-items: center;
 }
 
-.bandera-top {
+.index-section-3_bandera-top {
     position: absolute;
     bottom: 100%;
     max-height: 1.5%;
     width: 100%;
 }
 
-.productos {
+.index-section-3_titulo {
     padding-top: 1rem;
     align-self: flex-start;
     margin-bottom: 0 !important;
 }
 
-.productos-tipos {
+.index-section-3_productos {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -473,18 +468,14 @@ iframe {
     padding-inline: 6rem;
 }
 
-.shakes,
-.bombones,
-.postres-helados {
+.index-section-3_productos_item {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.shakes a,
-.bombones a,
-.postres-helados a {
+.index-section-3_productos_item a {
     text-decoration: none;
     transition: .5s;
     display: flex;
@@ -493,21 +484,17 @@ iframe {
     align-items: center;
 }
 
-.productos-texto {
+.index-section-3_productos_item_img_texto {
     font-weight: 600;
     text-shadow: 0px 1px 1px rgb(0,0,0,0.40);
     font-size: 1.5rem;
 }
 
-.shakes a:hover,
-.bombones a:hover,
-.postres-helados a:hover {
+.index-section-3_productos_item a:hover {
     scale: 1.05;
 }
 
-.shakes a:hover p,
-.bombones a:hover p,
-.postres-helados a:hover p {
+.index-section-3_productos_item a:hover p {
     color: #009246;
 }
 
@@ -515,24 +502,22 @@ iframe {
     width: unset !important;
 }
 
-.img-shakes,
-.img-bombones,
-.img-postres {
+.index-section-3_productos_item_img {
     border-radius: 20px;
 }
 
-.shakes,
-.postres-helados {
+.index-section-3_productos_item.shakes,
+.index-section-3_productos_item.postres {
     margin-top: 5rem;
 }
 
-.boton-productos { 
+.index-section-3_boton-productos{ 
     display: flex;
     justify-content: center;
     padding-bottom: 2rem;
 }
 
-.bandera-bottom {
+.index-section-3_bandera-bottom {
     position: absolute;
     top: 99%;
     max-height: 1.5%;
@@ -556,7 +541,7 @@ iframe {
     padding: 2rem 3rem;
 }
 
-.te-lo-llevamos {
+.delivery_titular {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -564,23 +549,23 @@ iframe {
     margin-bottom: 1rem;
 }
 
-.retiras {
+.delivery_titular_negro_retiras {
     margin-bottom: -8%;
 }
 
-.llevamos {
+.delivery_titular_negro_llevamos {
     margin-bottom: -4%;
 }
 
-.pedido {
+.delivery_titular_verde {
     text-align: center;
     font-weight: 700;
     margin-bottom: 0 !important;
     margin-top: unset;
 }
 
-.retiras,
-.llevamos {
+.delivery_titular_negro_retiras,
+.delivery_titular_negro_llevamos {
     font-size: 4.75rem;
     text-align: center;
 }
@@ -597,7 +582,7 @@ iframe {
     transition: .5s;
 }
 
-.boton-peya {
+.botones-delivery_peya {
     background-image: url(../img/redes/pedidosya.jpg);
     background-size: cover;
     background-position: center;
@@ -608,7 +593,7 @@ iframe {
     box-shadow: 1px 4px 6px rgb(0,0,0,0.40);
 }
 
-.boton-delivery-propio {
+.botones-delivery_propio {
     text-decoration: none;
     color: #009246;
     text-align: center;
@@ -641,7 +626,7 @@ iframe {
     background-attachment: fixed;
 }
 
-.nosotros-section-1 {
+.nosotros_section_1{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -649,28 +634,28 @@ iframe {
     margin-block: 3rem;
 }
 
-.nosotros-titulo {
+.nosotros_section_1_historia_titulo {
     line-height: 3rem;
     margin-bottom: 0 !important;
     font-weight: 700;
 }
 
-.texto-nosotros,
-.imagen-nosotros {
+.nosotros_section_1_historia,
+.nosotros_section_1_img {
     width: 50%;
 }
 
-.parrafo-nosotros {
+.nosotros_section_1_historia_parrafo {
     margin-block: 2rem;
     margin-right: 3rem;
 }
 
-.imagen-nosotros{
+.nosotros_section_1_img{
     display: flex;
     justify-content: center;
 }
 
-.img-nosotros {
+.nosotros_section_1_img_img {
     border-radius: 30px;
     width: 80%;
 }
@@ -721,7 +706,7 @@ iframe {
     align-items: flex-start;
 }
 
-.contenedor-grid {
+.productos-section-1_indice {
     width: 50%;
 
     display: flex;
@@ -730,21 +715,7 @@ iframe {
     column-gap: 0.5rem;
 }
 
-.shakes-grid {
-    grid-area: shakes;
-}
-
-.bombones-grid {
-    grid-area: bombones;
-}
-
-.postres-helados-grid{
-    grid-area: postres;
-}
-
-.shakes-grid,
-.bombones-grid,
-.postres-helados-grid {
+.productos-section-1_indice_item {
     text-decoration: none;
     display: flex;
     justify-content: flex-start;
@@ -752,7 +723,7 @@ iframe {
     flex-direction: column;
 }
 
-.texto-grid {
+.productos-section-1_indice_item_texto {
     text-align: center;
     font-weight: 600;
     text-decoration: none;
@@ -818,11 +789,11 @@ iframe {
 @media screen and (max-width: 992px) {
 
     /*INDEX NAV MOBILE-PC*/
-    .menu-mobile {
+    .menu_mobile {
         display: block;
     }
 
-    .menu-pc {
+    .menu_pc {
         display: none;
     }
 
@@ -834,50 +805,50 @@ iframe {
 
     /*INDEX SECTION 1*/
 
-    .nuestros-sabores {
+    .index-section-1_titulo {
         font-size: 2.5rem;
     }
 
-    .sabores-helados {
+    .index-section-1_helados_sabores_subtitulo {
         font-size: 1.4rem;
     }    
 
-    .helados { 
+    .index-section-1_helados { 
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr 1fr;
         grid-template-areas: 
-        "enlace-cremas enlace-chocolates" 
-        "enlace-dulces enlace-frutales";
+        "cremas chocolates" 
+        "dulces frutales";
         padding-inline: 7rem;
         gap: 4rem;
         }
 
     /*INDEX SECTION 3*/
 
-    .productos {
+    .index-section-3_titulo {
         font-size: 2.5rem;
     }
 
-    .productos-tipos {
+    .index-section-3_productos {
         padding-inline: 4rem;
     }
 
-    .productos-texto {
+    .index-section-3_productos_item_img_texto {
         font-size: 1.4rem
     }
 
 /*INDEX FOOTER*/
-    .parrafo-footer.direccion {
+    .footer_columnas_parrafo.direccion {
         padding-inline: unset;
     }
 
 /*NOSOTROS SECTION 1*/
 
-    .imagen-nosotros {
+    .nosotros_section_1_img {
         display: none;
     }
 
-    .texto-nosotros {
+    .nosotros_section_1_historia {
         width: 100%;
     } 
 }
@@ -892,7 +863,7 @@ iframe {
     
     /*FOOTER INDEX-NOSOTROS-SABORES-PRODUCTOS-DELIVERY*/
 
-    .logo-footer {
+    .footer_columnas_1 {
         order: 1;
     }
 
@@ -906,43 +877,43 @@ iframe {
         font-size: 1.2rem;
     }
 
-    .helados {
+    .index-section-1_helados {
         padding-inline: 2rem;
     }
 
     /* INDEX PRODUCTOS*/
 
-    .productos-texto {
+    .index-section-3_productos_item_img_texto {
         font-size: 1rem;
     }
 
-    .productos-tipos {
+    .index-section-3_productos {
         padding-inline: 2rem;
     }
 
-    .productos {
+    .index-section-3_titulo {
         font-size: 2.25rem;
     }
 
     /* INDEX DELIVERY */
 
-    .retiras, .llevamos {
+    .delivery_titular_negro_retiras, .delivery_titular_negro_llevamos {
         font-size: 3.7rem;
     }
 
-    .pedido {
+    .delivery_titular_verde {
         font-size: 2rem;
     }
 
     /* INDEX FOOTER*/
-    .footer-columnas {
+    .footer_columnas {
         flex-direction: column;
         align-items: center;
         padding-inline: 3rem;
     }
 
-    .nosotros-footer,
-    .parrafo-footer {
+    .footer_columnas_2_titulo,
+    .footer_columnas_parrafo {
         text-align: center;
     }
 
@@ -987,11 +958,11 @@ iframe {
     }
 
     /*INDEX SECTION 3*/
-    .productos-tipos {
+    .index-section-3_productos {
         padding-inline: 0rem;
     }
 
-    .productos-texto {
+    .index-section-3_productos_item_img_texto {
         font-size: 0.9rem;
     }
 
@@ -1001,11 +972,11 @@ iframe {
         padding: 2rem 2rem;
     }
 
-    .retiras, .llevamos {
+    .delivery_titular_negro_retiras, .delivery_titular_negro_llevamos {
         font-size: 2.7rem;
     }
     
-    .pedido {
+    .delivery_titular_verde {
         font-size: 2.1rem;
     }
 
@@ -1017,12 +988,12 @@ iframe {
         font-size: 2.75rem;
     }
 
-    .nosotros-titulo {
+    .nosotros_section_1_historia_titulo {
         line-height: 2rem;
         font-size: 2rem;
     }
 
-    .auguri-titulo {
+    .nosotros_section_1_historia_subtitulo {
         font-size: 1.8rem;
     }
 
@@ -1046,15 +1017,15 @@ iframe {
         padding-inline: 1rem;
     }
 
-    .retiras, .llevamos {
+    .delivery_titular_negro_retiras, .delivery_titular_negro_llevamos {
         font-size: 2.3rem;
     }
 
-    .pedido {
+    .delivery_titular_verde {
         font-size: 1.7rem;
     }
 
-    .productos-texto {
+    .index-section-3_productos_item_img_texto {
         font-size: 0.8rem;
     }
 
