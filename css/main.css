@@ -9,6 +9,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
+*::selection {
+    background-color: #009246;
+    color: antiquewhite;
+}
+
 img {
     max-width: 100%;
 }
@@ -52,6 +57,7 @@ p {
     font-size: 0.85rem;
     color: #ffffff;
 }
+
 
 /* CONFIGURACION HEADER GENERAL PC----------------------*/
 
