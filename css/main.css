@@ -700,7 +700,7 @@ iframe {
 /*PRODUCTOS MAIN SECTION 1  -------------------------------------------*/
 
 .productos-section-1 {
-    padding: 1rem 3rem;
+    padding-block: 1rem;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
@@ -708,7 +708,6 @@ iframe {
 
 .productos-section-1_indice {
     width: 50%;
-
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
@@ -721,15 +720,28 @@ iframe {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    transition: .3s;
+}
+
+.productos-section-1_indice_item_img {
+    border-radius: 20px;
+    width: 100%;
 }
 
 .productos-section-1_indice_item_texto {
     text-align: center;
     font-weight: 600;
     text-decoration: none;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
+.productos-section-1_indice_item:hover {
+    scale: 1.05;
+}
+
+.productos-section-1_indice_item:hover p {
+    color: #009246;
+}
 
 
 
@@ -837,20 +849,31 @@ iframe {
         font-size: 1.4rem
     }
 
-/*INDEX FOOTER*/
-    .footer_columnas_parrafo.direccion {
-        padding-inline: unset;
-    }
+    /*INDEX FOOTER*/
+        .footer_columnas_parrafo.direccion {
+            padding-inline: unset;
+        }
 
-/*NOSOTROS SECTION 1*/
+    /*NOSOTROS SECTION 1*/
 
-    .nosotros_section_1_img {
-        display: none;
-    }
+        .nosotros_section_1_img {
+            display: none;
+        }
 
-    .nosotros_section_1_historia {
-        width: 100%;
-    } 
+        .nosotros_section_1_historia {
+            width: 100%;
+        } 
+
+    /*PRODUCTOS SECTION 1*/
+
+        .container.productos-section-1{
+            max-width: 900px;
+        }
+
+        .productos-section-1_indice_item_texto {
+            font-size: 0.8rem;
+        }
+
 }
 
 
@@ -923,6 +946,19 @@ iframe {
         max-width: 35%;
         padding-inline: 1rem;
         border-radius: 40px;
+    }
+
+    /*PRODUCTOS SECTION 1*/
+    .productos-section-1 {
+        justify-content: center;
+    }
+
+    .productos-section-1_indice {
+        width: 70%;
+    }
+
+    .productos-section-1_indice_item_texto {
+        font-size: 0.8rem;
     }
 
 }
@@ -1007,6 +1043,15 @@ iframe {
         max-width: 50%;
         padding-inline: 0.5rem;
         border-radius: 40px;
+    }
+
+    /*PRODUCTOS SECTION 1*/
+    .productos-section-1_indice {
+        width: 100%;
+    }
+
+    .productos-section-1_indice_item_texto {
+        font-size: 0.8rem;
     }
 }
 
