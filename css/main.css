@@ -1188,11 +1188,11 @@ iframe {
     .productos-section-2_productos_item_subtitulo {
         font-size: 0.8rem;
     }
-
 }
 
-    /* PRUEBA CORRECCIÓN PROBLEMA CON IOS*/
 
+
+    /* PRUEBA CORRECCIÓN PROBLEMA CON IOS*/
 
 @supports (-webkit-touch-callout: none) {
     .header-index,
@@ -1201,7 +1201,7 @@ iframe {
     .header-nosotros,
     .header-sabores,
     .header-delivery {
-        background-size: cover;
+        background-size: 100% auto;
         background-attachment: fixed;
     }
 }
