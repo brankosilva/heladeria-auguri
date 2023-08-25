@@ -1192,7 +1192,7 @@ iframe {
     /* PRUEBA CORRECCIÓN PROBLEMA CON IOS*/
 
     .header-index {
-        background-size: 272% auto;
+        background-image: url(../img/PORTADAS/portada-header-index-mobile.png);
         background-attachment: fixed;
     }
 
