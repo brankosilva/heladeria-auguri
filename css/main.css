@@ -1192,37 +1192,37 @@ iframe {
     /* PRUEBA CORRECCIÓN PROBLEMA CON IOS*/
 
     .header-index {
-        background-size: 245% auto;
+        background-size: 272% auto;
         background-attachment: fixed;
     }
 
     .index-section-2 {
-        background-size: 245% auto;
+        background-size: 272% auto;
         background-attachment: fixed;
     }
 
     .index-section-4 {
-        background-size: 245% auto;
+        background-size: 272% auto;
         background-attachment: fixed;
     }
 
     .header-nosotros {
-        background-size: 292% auto;
+        background-size: 326% auto;
         background-attachment: fixed;
     }
 
     .header-sabores {
-        background-size: 225% auto;
+        background-size: 250% auto;
         background-attachment: fixed;
     }
 
     .header-productos {
-        background-size: 293% auto;
+        background-size: 326% auto;
         background-attachment: fixed;
     }
 
     .header-delivery {
-        background-size: 293% auto;
+        background-size: 326% auto;
         background-attachment: fixed;
     }
 }
