@@ -1193,7 +1193,7 @@ iframe {
 
     .header-index {
         background-image: url(../img/PORTADAS/portada-header-index-mobile.png);
-        background-attachment: fixed;
+        background-attachment:unset;
     }
 
     .index-section-2 {
@@ -1208,7 +1208,7 @@ iframe {
 
     .header-nosotros {
         background-image: url(../img/PORTADAS/nostros-header-mobile.png);
-        background-attachment: fixed;
+        background-attachment:unset;
     }
 
     .header-sabores {
