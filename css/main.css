@@ -916,6 +916,10 @@ iframe {
 
     /*NOSOTROS SECTION 1*/
 
+        .header-nosotros {
+            background-position: right;
+        }
+
         .nosotros_section_1_img {
             display: none;
         }
@@ -934,6 +938,12 @@ iframe {
             max-width: 900px;
         }
 
+    /*SABORES HEADER */
+
+    .header-sabores {
+        background-position: right;
+    }
+
 }
 
 
@@ -941,9 +951,6 @@ iframe {
 
 @media screen and (max-width: 767px) {
 
-    /* INDEX-NOSOTROS-SABORES-PRODUCTOS-DELIVERY*/
-
-    
     /*FOOTER INDEX-NOSOTROS-SABORES-PRODUCTOS-DELIVERY*/
 
     .footer_columnas_1 {
@@ -1144,6 +1151,8 @@ iframe {
     }
 }
 
+/* MEDIA QUERIES MAX-WIDTH 430*/
+
 @media screen and (max-width: 430px) {
 
     /*INDEX DELIVERY */
@@ -1179,4 +1188,64 @@ iframe {
     .productos-section-2_productos_item_subtitulo {
         font-size: 0.8rem;
     }
+
+    /* PRUEBA CORRECCIÓN PROBLEMA CON IOS*/
+/*
+    .header-index {
+        background-image: url(../img/PORTADAS/portada-header-index.jpg);
+        min-height: 100vh;
+        background-size: cover;
+        background-position: bottom;
+        background-attachment: fixed;
+    }
+
+    .index-section-2 {
+        background-image: url(../img/PORTADAS/portada-sect-2.png);
+        min-height: 70vh;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .index-section-4 {
+        background-image: url(../img/delivery/auguri-delivery-index.png);
+        min-height: 80vh;
+        background-size: cover;
+        background-position: bottom;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 2rem 3rem;
+    }
+
+    .header-nosotros {
+        background-image: url(../img/PORTADAS/portada-nosotros.jpg);
+        min-height: 100vh;
+        position: relative;
+        background-size: cover;
+        background-position: bottom;
+        background-attachment: fixed;
+    }
+
+    .header-sabores {
+        background-image: url(../img/PORTADAS/portada-sabores.jpg);
+        min-height: 60vh;
+        position: relative;
+        background-size: cover;
+        background-position: bottom;
+        background-attachment: fixed;
+    }
+
+    .header-delivery {
+        background-image: url(../img/PORTADAS/portada-delivery.jpg);
+        min-height: 100vh;
+        position: relative;
+        background-size: cover;
+        background-position: CENTER;
+        background-attachment: fixed;
+    }
+    */
+
 }
