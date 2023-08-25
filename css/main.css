@@ -1191,41 +1191,17 @@ iframe {
 
     /* PRUEBA CORRECCIÓN PROBLEMA CON IOS*/
 
-    .header-index {
-        background-attachment: unset;
-    }
-
-    .index-section-2 {
-        background-size: 272% auto;
-        background-attachment: fixed;
-    }
-
-    .index-section-4 {
-        background-size: 272% auto;
-        background-attachment: fixed;
-    }
-
-    .header-nosotros {
-        background-attachment: unset;
-    }
-
-    .header-sabores {
-        background-size: 250% auto;
-        background-attachment: fixed;
-    }
-
-    .header-productos {
-        background-size: 326% auto;
-        background-attachment: fixed;
-    }
-
+    .header-index,
+    .index-section-2,
+    .index-section-4,
+    .header-nosotros,
+    .header-sabores,
+    .header-productos,
     .header-delivery {
-        background-size: 326% auto;
-        background-attachment: fixed;
+        background-attachment: unset;
     }
+
 }
-
-
 
     /* PRUEBA CORRECCIÓN PROBLEMA CON IOS
 
