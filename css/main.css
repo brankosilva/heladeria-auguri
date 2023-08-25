@@ -1190,62 +1190,16 @@ iframe {
     }
 
     /* PRUEBA CORRECCIÓN PROBLEMA CON IOS*/
-/*
-    .header-index {
-        background-image: url(../img/PORTADAS/portada-header-index.jpg);
-        min-height: 100vh;
-        background-size: cover;
-        background-position: bottom;
-        background-attachment: fixed;
-    }
 
-    .index-section-2 {
-        background-image: url(../img/PORTADAS/portada-sect-2.png);
-        min-height: 70vh;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-    }
 
-    .index-section-4 {
-        background-image: url(../img/delivery/auguri-delivery-index.png);
-        min-height: 80vh;
-        background-size: cover;
-        background-position: bottom;
-        background-attachment: fixed;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding: 2rem 3rem;
-    }
-
-    .header-nosotros {
-        background-image: url(../img/PORTADAS/portada-nosotros.jpg);
-        min-height: 100vh;
-        position: relative;
-        background-size: cover;
-        background-position: bottom;
-        background-attachment: fixed;
-    }
-
-    .header-sabores {
-        background-image: url(../img/PORTADAS/portada-sabores.jpg);
-        min-height: 60vh;
-        position: relative;
-        background-size: cover;
-        background-position: bottom;
-        background-attachment: fixed;
-    }
-
+@supports (-webkit-touch-callout: none) {
+    .header-index,
+    .index-section-2,
+    .index-section-4,
+    .header-nosotros,
+    .header-sabores,
     .header-delivery {
-        background-image: url(../img/PORTADAS/portada-delivery.jpg);
-        min-height: 100vh;
-        position: relative;
         background-size: cover;
-        background-position: CENTER;
         background-attachment: fixed;
     }
-    */
-
 }
