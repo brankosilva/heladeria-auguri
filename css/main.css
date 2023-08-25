@@ -1207,7 +1207,7 @@ iframe {
     }
 
     .header-nosotros {
-        background-size: 326% auto;
+        background-image: url(../img/PORTADAS/nostros-header-mobile.png);
         background-attachment: fixed;
     }
 
