@@ -1188,11 +1188,48 @@ iframe {
     .productos-section-2_productos_item_subtitulo {
         font-size: 0.8rem;
     }
+
+    /* PRUEBA CORRECCIÓN PROBLEMA CON IOS*/
+
+    .header-index {
+        background-size: 245% auto;
+        background-attachment: fixed;
+    }
+
+    .index-section-2 {
+        background-size: 245% auto;
+        background-attachment: fixed;
+    }
+
+    .index-section-4 {
+        background-size: 245% auto;
+        background-attachment: fixed;
+    }
+
+    .header-nosotros {
+        background-size: 292% auto;
+        background-attachment: fixed;
+    }
+
+    .header-sabores {
+        background-size: 225% auto;
+        background-attachment: fixed;
+    }
+
+    .header-productos {
+        background-size: 293% auto;
+        background-attachment: fixed;
+    }
+
+    .header-delivery {
+        background-size: 293% auto;
+        background-attachment: fixed;
+    }
 }
 
 
 
-    /* PRUEBA CORRECCIÓN PROBLEMA CON IOS*/
+    /* PRUEBA CORRECCIÓN PROBLEMA CON IOS
 
 @supports (-webkit-touch-callout: none) {
     .header-index,
@@ -1204,4 +1241,4 @@ iframe {
         background-size: 100% auto;
         background-attachment: fixed;
     }
-}
+}*/
