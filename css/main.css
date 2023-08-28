@@ -306,6 +306,8 @@ iframe {
 
 /* FIN CONFIGURACIONES GENERALES-------------------------*/
 
+
+
 /* INDEX ------------------------------------------------*/
 
 /*INDEX-HEADER-------------------------------------------*/
@@ -669,6 +671,7 @@ iframe {
 
 
 /*SABORES------------------------------------------------*/
+
 /*SABORES-HEADER-----------------------------------------*/
 
 .header-sabores {
@@ -680,12 +683,110 @@ iframe {
     background-attachment: fixed;
 }
 
+/*SABORES-MAIN SECTION 1-----------------------------------------*/
+
+.sabores-section-1 {
+    padding-top: 0.3rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: sticky;
+    top: 0;
+    background-color: rgb(255 255 255 / 45%) !important;
+}
+
+.sabores-section-1_indice {
+    width: 58%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    column-gap: 0.5rem;
+}
+
+.sabores-section-1_indice_item {
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    transition: .3s;
+}
+
+.sabores-section-1_indice_item_img {
+    border-radius: 20px;
+    width: 100%;
+}
+
+.sabores-section-1_indice_item_texto {
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.sabores-section-1_indice_item:hover {
+    scale: 1.05;
+}
+
+.sabores-section-1_indice_item:hover p {
+    color: #009246;
+}
 
 
+/*SABORES MAIN SECTION 2  -------------------------------------------*/
+
+.sabores-section-2_sabores {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.sabores-section-2_titulo {
+    padding-bottom: 4rem;
+    padding-top: 2.5rem;
+}
+
+.sabores-section-2_sabores_item {
+    display: flex;
+    flex-direction: column;
+    max-width: 14rem;
+}
+
+.sabores-section-2_sabores_item_img {
+    border-radius: 30px;
+    margin-bottom: 1.2rem;
+    transition: 0.3s;
+}
+
+.sabores-section-2_sabores_item_img:hover {
+    transform:scale(1.05)
+}
+
+
+.sabores-section-2_sabores_item_titulo {
+    font-size: 1.4rem;
+    text-shadow: none;
+    font-weight: 700;
+    text-align: center;
+}
+
+.sabores-section-2_sabores_item_subtitulo {
+    text-align: center;
+    margin-top: -0.3rem;
+    font-size: 0.9rem;
+}
+
+.sabores-section-2_sabores.frutales {
+    margin-bottom: 3rem;
+}
 
 
 
 /*PRODUCTOS----------------------------------------------*/
+
 /*PRODUCTOS-HEADER---------------------------------------*/
 
 .header-productos {
@@ -751,7 +852,7 @@ iframe {
 .productos-section-2_productos {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: start;
     flex-wrap: wrap;
     gap: 2rem;
     margin-bottom: 1rem;
@@ -854,6 +955,11 @@ iframe {
     .productos-section-1_indice {
     width: 53%;
     }
+
+    /*SABORES INDICE*/
+    .productos-section-1_indice {
+        width: 68%;
+        }
 }
 
 /* MEDIA QUERIES MAX-WIDTH 992*/
@@ -927,6 +1033,7 @@ iframe {
         .nosotros_section_1_historia {
             width: 100%;
         } 
+
     /*PRODUCTOS INDICE 1*/
         .productos-section-1_indice {
             width: 55%;
@@ -942,6 +1049,17 @@ iframe {
 
         .header-sabores {
             background-position: right;
+        }
+
+    /*SABORES INDICE 1*/
+        .sabores-section-1_indice {
+            width: 70%;
+        }
+
+    /*SABORES SECTION 1*/
+
+        .container.sabores-section-1 {
+            max-width: 900px;
         }
 
 }
@@ -1021,7 +1139,7 @@ iframe {
     }
 
     .productos-section-1_indice {
-        width: 65%;
+        width: 60%;
     }
 
     .productos-section-1_indice_item_subtitulo {
@@ -1029,6 +1147,23 @@ iframe {
     }
 
     .productos-section-2_titulo {
+        padding-bottom: 3rem;
+    }
+
+    /*SABORES SECTION 1*/
+    .sabores-section-1 {
+        justify-content: center;
+    }
+
+    .sabores-section-1_indice {
+        width: 75%;
+    }
+
+    .sabores-section-1_indice_item_subtitulo {
+        font-size: 0.8rem;
+    }
+
+    .sabores-section-2_titulo {
         padding-bottom: 3rem;
     }
 
@@ -1124,6 +1259,15 @@ iframe {
     .productos-section-1_indice_item_texto {
         font-size: 0.8rem;
     }
+
+    /*SABORES SECTION 1*/
+    .sabores-section-1_indice {
+        width: 100%;
+    }
+
+    .sabores-section-1_indice_item_texto {
+        font-size: 0.8rem;
+    }
 }
 
 /* MEDIA QUERIES MAX-WIDTH 544*/
@@ -1145,6 +1289,23 @@ iframe {
     }
 
     .productos-section-2_productos_item {
+        display: flex;
+        flex-direction: column;
+        max-width: 18rem;
+    }
+
+    /*SABORES SECTION 1*/
+
+    .sabores-section-2_sabores {
+        justify-content: center;
+    }
+
+    .sabores-section-2_titulo {
+        padding-bottom: 2.7rem;
+        font-size: 2.4rem;
+    }
+
+    .sabores-section-2_sabores_item {
         display: flex;
         flex-direction: column;
         max-width: 18rem;
@@ -1186,6 +1347,12 @@ iframe {
     /*PRODUCTOS SECTION 1 */
 
     .productos-section-2_productos_item_subtitulo {
+        font-size: 0.8rem;
+    }
+
+    /*SABORES SECTION 1 */
+
+    .sabores-section-2_sabores_item_subtitulo {
         font-size: 0.8rem;
     }
 
