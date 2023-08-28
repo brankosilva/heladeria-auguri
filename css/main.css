@@ -700,7 +700,7 @@ iframe {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
-    column-gap: 0.5rem;
+    column-gap: 1rem;
 }
 
 .sabores-section-1_indice_item {
@@ -957,9 +957,9 @@ iframe {
     }
 
     /*SABORES INDICE*/
-    .productos-section-1_indice {
+    .sabores-section-1_indice {
         width: 68%;
-        }
+    }
 }
 
 /* MEDIA QUERIES MAX-WIDTH 992*/
