@@ -940,9 +940,9 @@ iframe {
 
     /*SABORES HEADER */
 
-    .header-sabores {
-        background-position: right;
-    }
+        .header-sabores {
+            background-position: right;
+        }
 
 }
 
@@ -1202,17 +1202,3 @@ iframe {
     }
 
 }
-
-    /* PRUEBA CORRECCIÓN PROBLEMA CON IOS
-
-@supports (-webkit-touch-callout: none) {
-    .header-index,
-    .index-section-2,
-    .index-section-4,
-    .header-nosotros,
-    .header-sabores,
-    .header-delivery {
-        background-size: 100% auto;
-        background-attachment: fixed;
-    }
-}*/
