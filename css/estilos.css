@@ -1,0 +1,1101 @@
+@charset "UTF-8";
+/*CONFIGURACIONES GENERALES--------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+*::-moz-selection {
+  background-color: #009246;
+  color: #ffffff;
+}
+
+*::selection {
+  background-color: #009246;
+  color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+}
+
+:root {
+  font-size: 16px;
+}
+
+h1 {
+  color: #1E1E1E;
+  font-weight: 700;
+  font-size: 3.25rem;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+  line-height: unset;
+}
+
+h2 {
+  color: #009246;
+  font-size: 3rem;
+  text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.4);
+  line-height: unset;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 2rem;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+  line-height: unset;
+  margin-bottom: 0 !important;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #1E1E1E;
+  margin-bottom: 0 !important;
+}
+
+.footer_columnas_parrafo {
+  font-weight: 200;
+  font-size: 0.85rem;
+  color: #ffffff;
+}
+
+/* CONFIGURACION HEADER GENERAL PC----------------------*/
+header {
+  background-image: url("../img/PORTADAS/portada-header-index.jpg");
+  min-height: 100vh;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+header .titulo-header {
+  color: #ffffff;
+  position: absolute;
+  margin: 0 3rem;
+  top: 75%;
+}
+header nav > ul {
+  display: flex;
+  color: #ffffff;
+  align-items: center;
+  list-style-type: none;
+  margin-bottom: 0 !important;
+  padding-left: 0 !important;
+}
+header nav > ul .menu_pc_links {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+}
+header nav > ul .menu_pc_links_item a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+}
+header nav > ul .menu_pc_links_item a:hover {
+  text-decoration: underline;
+}
+header nav > ul .menu_pc_links_item.active {
+  text-decoration: underline;
+}
+header nav > ul .menu_pc_links_item:hover {
+  scale: 1.1;
+  transition: 0.3s;
+}
+header nav > ul .menu_pc_links--artesanal {
+  text-align: left;
+  font-weight: 700;
+  max-width: 0rem;
+  min-width: 8.5rem;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+}
+header nav > ul .menu_pc_links--logo {
+  display: flex;
+  padding-inline: 1rem;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+}
+header nav > ul .menu_pc_links--logo:hover {
+  scale: 1.01;
+  transition: 0.3s;
+}
+header .menu_mobile {
+  display: none;
+}
+header .menu_mobile .bg-body-tertiary {
+  --bs-bg-opacity: 0.1;
+}
+header .menu_mobile .navbar {
+  --bs-navbar-toggler-padding-y: 0.25rem;
+  --bs-navbar-toggler-padding-x: 0.40rem;
+  --bs-navbar-toggler-font-size: none;
+}
+header .menu_mobile .navbar .container.mobile {
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+}
+header .menu_mobile .navbar .container.mobile a .logo-mobile {
+  max-width: 30%;
+}
+header .menu_mobile .navbar .container.mobile .navbar-toggler {
+  background-color: #ffffff;
+  color: #009246;
+}
+header .menu_mobile .navbar .container.mobile .navbar-collapse .navbar-nav {
+  --bs-nav-link-hover-color: rgb(239 4 4);
+  align-items: flex-end;
+}
+header .menu_mobile .navbar .container.mobile .navbar-collapse .navbar-nav .nav-link.active, header .menu_mobile .navbar .container.mobile .navbar-collapse .navbar-nav .nav-link.show {
+  color: rgb(0, 146, 87);
+}
+header .nav-link {
+  color: #ffffff;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+/* CONFIGURACION HEADER GENERAL MOBILE----------------------*/
+/* CONFIGURACION FOOOTER GENERAL---------------------------*/
+footer {
+  background-color: #1E1E1E;
+  position: relative;
+  color: #ffffff;
+  padding-top: 2rem;
+}
+footer .footer_columnas > * {
+  flex: 1;
+}
+footer .footer_columnas {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+footer .footer_columnas_1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer_columnas_1_texto {
+  font-weight: 200;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+footer .footer_columnas_1_img {
+  width: 40%;
+  margin-bottom: 1rem;
+}
+footer .footer_columnas_1_negrita {
+  font-weight: 700;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+footer .footer_columnas_2 {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer_columnas_2 .footer_columnas_2_titulo {
+  margin-bottom: 0.5rem;
+}
+footer .footer_columnas_3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+footer .footer_columnas_3 iframe {
+  width: 100%;
+  max-height: 40vh;
+  border-radius: 20px;
+}
+footer .footer_columnas_3_parrafo.direccion {
+  padding-inline: 2.2rem;
+  text-align: center;
+}
+footer .botones_redes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+footer .botones_redes a:hover {
+  scale: 1.1;
+  transition: 0.2s;
+}
+footer .botones_redes_boton {
+  margin-inline: 0.2rem;
+  margin-bottom: 1rem;
+}
+footer .botones_redes_boton .bi.bi-facebook,
+footer .botones_redes_boton .bi.bi-instagram,
+footer .botones_redes_boton .bi.bi-bicycle {
+  color: #ffffff;
+}
+footer .powered {
+  background-color: #009246;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+}
+footer .powered_texto {
+  margin-bottom: 0rem;
+}
+
+/* BOTON WPP ------------------------------------------------*/
+.bi.bi-whatsapp {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  transition: 0.2s;
+  color: #009246;
+  font-size: 2rem;
+}
+.bi.bi-whatsapp:hover {
+  scale: 1.1;
+}
+
+/* FIN CONFIGURACIONES GENERALES-------------------------*/
+/* INDEX ------------------------------------------------*/
+/*INDEX MAIN SECTION 1  -------------------------------------------*/
+.index-section-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-block: 2rem;
+}
+.index-section-1_titulo {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-bottom: 0 !important;
+  padding-inline: 3rem;
+}
+
+.index-section-1_helados {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "cremas chocolates dulces frutales";
+}
+.index-section-1_helados.cremas {
+  grid-area: cremas;
+}
+.index-section-1_helados.chocolates {
+  grid-area: chocolates;
+}
+.index-section-1_helados.dulces {
+  grid-area: dulces;
+}
+.index-section-1_helados.frutales {
+  grid-area: frutales;
+}
+.index-section-1_helados_sabores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.index-section-1_helados_sabores_subtitulo {
+  font-size: 1.5rem;
+  color: #1E1E1E;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.index-section-1-mobile {
+  display: none;
+  gap: 2rem;
+}
+
+.w-100 {
+  width: unset !important;
+}
+
+.carousel-control-next {
+  right: -50px;
+}
+
+.carousel-control-prev {
+  left: -50px;
+}
+
+.carousel-indicators {
+  bottom: -42px;
+}
+
+.index-section-1_helados a {
+  transition: 0.5s;
+}
+.index-section-1_helados a:hover {
+  scale: 1.05;
+}
+.index-section-1_helados a:hover h3 {
+  color: #009246;
+}
+
+.boton-ver {
+  text-decoration: none;
+  color: #009246;
+  background-color: #ffffff;
+  border: 2px solid #009246;
+  padding: 0.3rem;
+  border-radius: 20px;
+  width: 6rem;
+  font-weight: 700;
+  text-align: center;
+  transition: 0.6s;
+}
+.boton-ver:hover {
+  background-color: #009246;
+  color: #ffffff;
+}
+
+/*INDEX MAIN SECTION 2  -------------------------------------------*/
+.index-section-2 {
+  background-image: url(../img/PORTADAS/portada-sect-2.png);
+  min-height: 70vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/*INDEX MAIN SECTION 3  -------------------------------------------*/
+.index-section-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+}
+.index-section-3_bandera-top {
+  position: absolute;
+  bottom: 100%;
+  max-height: 1.5%;
+  width: 100%;
+}
+.index-section-3_bandera-bottom {
+  position: absolute;
+  top: 99%;
+  max-height: 1.5%;
+  width: 100%;
+}
+.index-section-3_titulo {
+  padding-top: 1rem;
+  align-self: flex-start;
+  margin-bottom: 0 !important;
+}
+.index-section-3_productos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-inline: 6rem;
+}
+.index-section-3_productos_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.index-section-3_productos_item_img {
+  border-radius: 20px;
+}
+.index-section-3_productos_item_img_texto {
+  font-weight: 600;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+  font-size: 1.5rem;
+}
+.index-section-3_productos_item a {
+  text-decoration: none;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.index-section-3_productos_item a:hover {
+  scale: 1.05;
+}
+.index-section-3_productos_item a:hover p {
+  color: #009246;
+}
+.index-section-3_productos_item.shakes, .index-section-3_productos_item.postres {
+  margin-top: 5rem;
+}
+.index-section-3_boton-productos {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+/*INDEX MAIN SECTION 4  -------------------------------------------*/
+.index-section-4 {
+  background-image: url(../img/delivery/auguri-delivery-index.png);
+  min-height: 80vh;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 3rem;
+}
+
+.delivery_titular {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.delivery_titular_negro_retiras {
+  margin-bottom: -8%;
+}
+.delivery_titular_negro_llevamos {
+  margin-bottom: -4%;
+}
+.delivery_titular_negro_retiras, .delivery_titular_negro_llevamos {
+  font-size: 4.75rem;
+  text-align: center;
+}
+.delivery_titular_verde {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 0 !important;
+  margin-top: unset;
+}
+
+.botones-delivery {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.botones-delivery a {
+  transition: 0.5s;
+}
+.botones-delivery a:hover {
+  scale: 1.05;
+}
+.botones-delivery_peya {
+  background-image: url(../img/redes/pedidosya.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #ff2a40;
+  border-radius: 20px;
+  min-width: 10rem;
+  min-height: 2.5rem;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.4);
+}
+.botones-delivery_propio {
+  text-decoration: none;
+  color: #009246;
+  text-align: center;
+  background-color: #ffffff;
+  border: 2px solid #009246;
+  padding: 0.5rem;
+  border-radius: 20px;
+  width: 10rem;
+  font-weight: 800;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+/*NOSOTROS-----------------------------------------------*/
+/*NOSOTROS-HEADER----------------------------------------*/
+.header-nosotros {
+  background-image: url("../img/PORTADAS/portada-nosotros.jpg");
+  min-height: 100vh;
+  position: relative;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+
+.nosotros_section_1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-block: 3rem;
+}
+.nosotros_section_1_historia, .nosotros_section_1_img {
+  width: 50%;
+}
+.nosotros_section_1_img {
+  display: flex;
+  justify-content: center;
+}
+.nosotros_section_1_img_img {
+  border-radius: 30px;
+  width: 80%;
+}
+.nosotros_section_1_historia_titulo {
+  line-height: 3rem;
+  margin-bottom: 0 !important;
+  font-weight: 700;
+}
+.nosotros_section_1_historia_parrafo {
+  margin-block: 2rem;
+  margin-right: 3rem;
+}
+
+/*SABORES------------------------------------------------*/
+/*SABORES-HEADER-----------------------------------------*/
+.header-sabores {
+  background-image: url("../img/PORTADAS/portada-sabores.jpg");
+  min-height: 60vh;
+  position: relative;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+
+/*SABORES-MAIN SECTION 1-----------------------------------------*/
+.sabores-section-1 {
+  padding-top: 0.3rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.45) !important;
+  z-index: 3;
+}
+.sabores-section-1_indice {
+  width: 58%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+.sabores-section-1_indice_item {
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.3s;
+}
+.sabores-section-1_indice_item_img {
+  border-radius: 20px;
+  width: 100%;
+}
+.sabores-section-1_indice_item_texto {
+  text-align: center;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.sabores-section-1_indice_item:hover {
+  scale: 1.05;
+}
+.sabores-section-1_indice_item:hover p {
+  color: #009246;
+}
+
+/*SABORES MAIN SECTION 2  -------------------------------------------*/
+.sabores-section-2_titulo {
+  padding-bottom: 4rem;
+  padding-top: 2.5rem;
+}
+.sabores-section-2_sabores {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+.sabores-section-2_sabores_item {
+  display: flex;
+  flex-direction: column;
+  max-width: 14rem;
+}
+.sabores-section-2_sabores_item_img {
+  border-radius: 30px;
+  margin-bottom: 1.2rem;
+  transition: 0.3s;
+}
+.sabores-section-2_sabores_item_img:hover {
+  transform: scale(1.05);
+}
+.sabores-section-2_sabores_item_titulo {
+  font-size: 1.4rem;
+  text-shadow: none;
+  font-weight: 700;
+  text-align: center;
+}
+.sabores-section-2_sabores_item_subtitulo {
+  text-align: center;
+  margin-top: -0.3rem;
+  font-size: 0.9rem;
+}
+.sabores-section-2_sabores.frutales {
+  margin-bottom: 3rem;
+}
+
+/*PRODUCTOS----------------------------------------------*/
+/*PRODUCTOS-HEADER---------------------------------------*/
+.header-productos {
+  background-image: url("../img/PORTADAS/portada-productos.jpg");
+  min-height: 60vh;
+  position: relative;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+
+/*PRODUCTOS MAIN SECTION 1  -------------------------------------------*/
+.productos-section-1 {
+  padding-top: 0.3rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.45) !important;
+  z-index: 3;
+}
+.productos-section-1_indice {
+  width: 45%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+.productos-section-1_indice_item {
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.3s;
+}
+.productos-section-1_indice_item_img {
+  border-radius: 20px;
+  width: 100%;
+}
+.productos-section-1_indice_item_texto {
+  text-align: center;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.productos-section-1_indice_item:hover {
+  scale: 1.05;
+}
+.productos-section-1_indice_item:hover p {
+  color: #009246;
+}
+
+/*PRODUCTOS MAIN SECTION 2  -------------------------------------------*/
+.productos-section-2_titulo {
+  padding-bottom: 4rem;
+  padding-top: 2.5rem;
+}
+.productos-section-2_productos {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+.productos-section-2_productos_item {
+  display: flex;
+  flex-direction: column;
+  max-width: 14rem;
+}
+.productos-section-2_productos_item_img {
+  border-radius: 30px;
+  margin-bottom: 1.2rem;
+  transition: 0.3s;
+}
+.productos-section-2_productos_item_img:hover {
+  transform: scale(1.05);
+}
+.productos-section-2_productos_item_titulo {
+  font-size: 1.4rem;
+  text-shadow: none;
+  font-weight: 700;
+  text-align: center;
+}
+.productos-section-2_productos_item_subtitulo {
+  text-align: center;
+  margin-top: -0.3rem;
+  font-size: 0.9rem;
+}
+.productos-section-2_productos.postres {
+  margin-bottom: 3rem;
+}
+
+/*DELIVERY-----------------------------------------------*/
+/*DELIVERY-HEADER----------------------------------------*/
+.header-delivery {
+  background-image: url("../img/PORTADAS/portada-delivery.jpg");
+  min-height: 100vh;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/*DELIVERY MAIN SECTION 1  -------------------------------------------*/
+.delivery-section-1 {
+  padding-block: 2rem;
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.delivery-imagenes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.imagen-delivery {
+  border-radius: 30px;
+  flex: 1;
+  max-width: 20%;
+}
+.imagen-delivery:hover {
+  scale: 1.04;
+  transition: 0.5s;
+}
+
+/* MEDIAAAAA QUERIIIIIIIIIIIIIEEEEES */
+/*MEDIA QUERIES MAX-WIDTH 1200*/
+@media screen and (max-width: 1200px) {
+  /*PRODUCTOS INDICE*/
+  .productos-section-1_indice {
+    width: 53%;
+  }
+  /*SABORES INDICE*/
+  .sabores-section-1_indice {
+    width: 68%;
+  }
+}
+/* MEDIA QUERIES MAX-WIDTH 992*/
+@media screen and (max-width: 992px) {
+  /* INDEX NAV MOBILE y PC */
+  .menu_mobile {
+    display: block !important;
+  }
+  .menu_pc {
+    display: none;
+  }
+  /*HEADER */
+  .titulo-header {
+    margin: 0 0rem;
+  }
+  /* INDEX SECTION 1 */
+  .index-section-1_titulo {
+    font-size: 2.5rem;
+  }
+  .index-section-1_helados {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "cremas chocolates" "dulces frutales";
+    padding-inline: 7rem;
+    gap: 4rem;
+  }
+  .index-section-1_helados_sabores_subtitulo {
+    font-size: 1.4rem;
+  }
+  /*INDEX SECTION 3*/
+  .index-section-3_titulo {
+    font-size: 2.5rem;
+  }
+  .index-section-3_productos {
+    padding-inline: 4rem;
+  }
+  .index-section-3_productos_item_img_texto {
+    font-size: 1.4rem;
+  }
+  /*INDEX FOOTER*/
+  .footer_columnas_parrafo.direccion {
+    padding-inline: unset;
+  }
+  /*NOSOTROS SECTION 1*/
+  .header-nosotros {
+    background-position: right;
+  }
+  .nosotros_section_1_img {
+    display: none;
+  }
+  .nosotros_section_1_historia {
+    width: 100%;
+  }
+  /*PRODUCTOS INDICE 1*/
+  .productos-section-1_indice {
+    width: 55%;
+  }
+  /*PRODUCTOS SECTION 1*/
+  .container.productos-section-1 {
+    max-width: 900px;
+  }
+  /*SABORES HEADER */
+  .header-sabores {
+    background-position: right;
+  }
+  /*SABORES INDICE 1*/
+  .sabores-section-1_indice {
+    width: 70%;
+  }
+  /*SABORES SECTION 1*/
+  .container.sabores-section-1 {
+    max-width: 900px;
+  }
+}
+/* MEDIA QUERIES MAX-WIDTH 767*/
+@media screen and (max-width: 767px) {
+  /*FOOTER INDEX-NOSOTROS-SABORES-PRODUCTOS-DELIVERY*/
+  .footer_columnas_1 {
+    order: 1;
+  }
+  /* INDEX SABORES */
+  .nuestros-sabores {
+    font-size: 2.25rem;
+  }
+  .sabores-helados {
+    font-size: 1.2rem;
+  }
+  .index-section-1_helados {
+    padding-inline: 2rem;
+  }
+  /* INDEX PRODUCTOS*/
+  .index-section-3_productos {
+    padding-inline: 2rem;
+  }
+  .index-section-3_productos_productos_item_img_texto {
+    font-size: 1rem;
+  }
+  .index-section-3_titulo {
+    font-size: 2.25rem;
+  }
+  /* INDEX DELIVERY */
+  .delivery_titular_negro_retiras, .delivery_titular_negro_llevamos {
+    font-size: 3.7rem;
+  }
+  .delivery_titular_verde {
+    font-size: 2rem;
+  }
+  /* INDEX FOOTER*/
+  .footer_columnas {
+    flex-direction: column;
+    align-items: center !important;
+    padding-inline: 3rem;
+  }
+  .footer_columnas_2_titulo,
+  .footer_columnas_parrafo {
+    text-align: center;
+  }
+  /* DELIVERY SECTION 1 */
+  .imagen-delivery {
+    max-width: 35%;
+    padding-inline: 1rem;
+    border-radius: 40px;
+  }
+  /*PRODUCTOS SECTION 1*/
+  .productos-section-1 {
+    justify-content: center;
+  }
+  .productos-section-1_indice {
+    width: 60%;
+  }
+  .productos-section-1_indice_item_texto {
+    font-size: 0.8rem;
+  }
+  .productos-section-2_titulo {
+    padding-bottom: 3rem;
+  }
+  /*SABORES SECTION 1*/
+  .sabores-section-1 {
+    justify-content: center;
+  }
+  .sabores-section-1_indice {
+    width: 75%;
+  }
+  .sabores-section-1_indice_item_texto {
+    font-size: 0.8rem;
+  }
+  .sabores-section-2_titulo {
+    padding-bottom: 3rem;
+  }
+}
+/* MEDIA QUERIES MAX-WIDTH 576*/
+@media screen and (max-width: 576px) {
+  /* INDEX-NOSOTROS-SABORES-PRODUCTOS-DELIVERY*/
+  .container {
+    padding-inline: 2rem;
+  }
+  .container.mobile {
+    padding-right: calc(var(--bs-gutter-x) * 1);
+    padding-left: calc(var(--bs-gutter-x) * 1);
+  }
+  /*INDEX SECTION 1*/
+  .index-section-1 {
+    display: none;
+  }
+  .index-section-1-mobile {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block: 2rem;
+  }
+  /*INDEX SECTION 3*/
+  .index-section-3_productos {
+    padding-inline: 0rem;
+  }
+  .index-section-3_productos_item_img_texto {
+    font-size: 0.9rem;
+  }
+  /* INDEX DELIVERY */
+  .index-section-4 {
+    padding: 2rem 2rem;
+  }
+  .delivery_titular_negro_retiras, .delivery_titular_negro_llevamos {
+    font-size: 2.7rem;
+  }
+  .delivery_titular_verde {
+    font-size: 2.1rem;
+  }
+  /* NOSOTROS TITULO HEADER */
+  .titulo-header {
+    margin: 0 0rem;
+    top: 75%;
+    font-size: 2.75rem;
+  }
+  .nosotros_section_1_historia_titulo {
+    line-height: 2rem;
+    font-size: 2rem;
+  }
+  .nosotros_section_1_historia_subtitulo {
+    font-size: 1.8rem;
+  }
+  /* DELIVERY SECTION 1 */
+  .imagen-delivery.dos {
+    display: none;
+  }
+  .imagen-delivery {
+    max-width: 50%;
+    padding-inline: 0.5rem;
+    border-radius: 40px;
+  }
+  /*PRODUCTOS SECTION 1*/
+  .productos-section-1_indice {
+    width: 90%;
+  }
+  .productos-section-1_indice_item_texto {
+    font-size: 0.8rem;
+  }
+  /*SABORES SECTION 1*/
+  .sabores-section-1_indice {
+    width: 100%;
+  }
+  .sabores-section-1_indice_item_texto {
+    font-size: 0.8rem;
+  }
+}
+/* MEDIA QUERIES MAX-WIDTH 544*/
+@media screen and (max-width: 544px) {
+  /*PRODUCTOS SECTION 1*/
+  .productos-section-1_indice {
+    width: 80%;
+  }
+  .productos-section-2_titulo {
+    padding-bottom: 2.7rem;
+    font-size: 2.4rem;
+  }
+  .productos-section-2_productos {
+    justify-content: center;
+  }
+  .productos-section-2_productos_item {
+    display: flex;
+    flex-direction: column;
+    max-width: 18rem;
+  }
+  /*SABORES SECTION 1*/
+  .sabores-section-2_titulo {
+    padding-bottom: 2.7rem;
+    font-size: 2.4rem;
+  }
+  .sabores-section-2_sabores {
+    justify-content: center;
+  }
+  .sabores-section-2_sabores_item {
+    display: flex;
+    flex-direction: column;
+    max-width: 18rem;
+  }
+}
+/* MEDIA QUERIES MAX-WIDTH 430*/
+@media screen and (max-width: 430px) {
+  /*INDEX DELIVERY */
+  .container {
+    padding-inline: 1rem;
+  }
+  .delivery_titular_negro_retiras, .delivery_titular_negro_llevamos {
+    font-size: 2.3rem;
+  }
+  .delivery_titular_verde {
+    font-size: 1.7rem;
+  }
+  .index-section-3_productos_item_img_texto {
+    font-size: 0.8rem;
+  }
+  /*DELIVERY SECTION 1*/
+  .imagen-delivery.uno,
+  .imagen-delivery.dos {
+    display: none;
+  }
+  .imagen-delivery {
+    max-width: 100%;
+  }
+  /*PRODUCTOS SECTION 1 */
+  .productos-section-2_productos_item_subtitulo {
+    font-size: 0.8rem;
+  }
+  /*SABORES SECTION 1 */
+  .sabores-section-2_sabores_item_subtitulo {
+    font-size: 0.8rem;
+  }
+  /* PRUEBA CORRECCIÓN PROBLEMA CON IOS*/
+  .header-index,
+  .index-section-2,
+  .index-section-4,
+  .header-nosotros,
+  .header-sabores,
+  .header-productos,
+  .header-delivery {
+    background-attachment: unset;
+  }
+}/*# sourceMappingURL=estilos.css.map */
