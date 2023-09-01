@@ -66,10 +66,11 @@ header {
             padding-inline: 1rem;
             flex-wrap: wrap;
             row-gap: 1rem;
+            transition: 4s;
 
             &:hover {
                 scale: 1.01;
-                transition: .3s;
+                transform: rotatey(360deg);
             }
         }
     }
@@ -182,9 +183,41 @@ header {
                 color: $color-negro;
                 text-shadow: $sombra-texto-negro;
             }
+
+            &_img {
+                --color: #009246; /* the color of the border */
+                --border: 6px;   /* the thickness of the border */
+                --offset: 10px;   /* control the movement of the border */
+                --gap: 3px;       /* the gap on hover */
+                
+                border-radius: 50%;
+                cursor: pointer;
+                padding: calc(var(--border) + var(--gap));
+                border: var(--offset) solid #0000;
+                --_m: radial-gradient(50% 50%, #000 calc(100% - var(--offset)),#0000 calc(100% - var(--border)));
+                -webkit-mask: var(--_m);
+                        mask: var(--_m);
+                --_g: #0000 calc(99% - var(--border)), var(--color) calc(100% - var(--border)) 99%,#0000;
+                --_s: var(--offset);
+                --_r: 100% 100% at;
+                background:
+                  radial-gradient(var(--_r) 0    0   ,var(--_g)) calc(100% + var(--_s)) calc(100% + var(--_s)),
+                  radial-gradient(var(--_r) 100% 0   ,var(--_g)) calc(0%   - var(--_s)) calc(100% + var(--_s)),
+                  radial-gradient(var(--_r) 0    100%,var(--_g)) calc(100% + var(--_s)) calc(0%   - var(--_s)),
+                  radial-gradient(var(--_r) 100% 100%,var(--_g)) calc(0%   - var(--_s)) calc(0%   - var(--_s));
+                background-size: 50% 50%;
+                background-repeat: no-repeat;
+                transition: .4s;
+                }
+                
+                &_img:hover {
+                    --_s: 0px
+                }
         }
     }
 }
+
+
 
 
 .index-section-1-mobile {
