@@ -1,0 +1,463 @@
+/*MEDIA QUERIES MAX-WIDTH 1200*/
+
+@media screen and (max-width: 1200px) {
+
+    /*PRODUCTOS INDICE*/
+
+    .productos-section-1_indice {
+    width: 53%;
+    }
+
+    /*SABORES INDICE*/
+
+    .sabores-section-1_indice {
+        width: 68%;
+    }
+}
+
+
+
+/* MEDIA QUERIES MAX-WIDTH 992*/
+
+@media screen and (max-width: 992px) {
+
+    /* INDEX NAV MOBILE y PC */
+
+    .menu_mobile {
+        display: block!important;
+    }
+
+    .menu_pc {
+        display: none;
+    }
+
+    /*HEADER */
+
+    .titulo-header {
+        margin: 0 0rem;
+    }
+
+    /* INDEX SECTION 1 */
+
+    .index-section-1 {
+
+        &_titulo {
+            font-size: 2.5rem;
+        }
+
+        &_helados { 
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+            "cremas chocolates" 
+            "dulces frutales";
+            padding-inline: 7rem;
+            gap: 4rem;
+
+            &_sabores_subtitulo {
+                font-size: 1.4rem;
+            }   
+        }
+    }
+
+    /*INDEX SECTION 3*/
+
+    .index-section-3 {
+
+        &_titulo {
+            font-size: 2.5rem;
+        }
+
+        &_productos {
+            padding-inline: 4rem;
+
+            &_item_img_texto {
+                font-size: 1.4rem
+            }
+        }
+    }
+
+    /*INDEX FOOTER*/
+
+        .footer_columnas_parrafo.direccion {
+            padding-inline: unset;
+        }
+
+    /*NOSOTROS SECTION 1*/
+
+        .header-nosotros {
+            background-position: right;
+        }
+
+        .nosotros_section_1 {
+            &_img {
+                display: none;
+            }
+
+            &_historia {
+                width: 100%;
+            } 
+        }
+
+    /*PRODUCTOS INDICE 1*/
+
+        .productos-section-1_indice {
+            width: 55%;
+        }
+
+    /*PRODUCTOS SECTION 1*/
+
+        .container.productos-section-1 {
+            max-width: 900px;
+        }
+
+    /*SABORES HEADER */
+
+        .header-sabores {
+            background-position: right;
+        }
+
+    /*SABORES INDICE 1*/
+
+        .sabores-section-1_indice {
+            width: 70%;
+        }
+
+    /*SABORES SECTION 1*/
+
+        .container.sabores-section-1 {
+            max-width: 900px;
+        }
+
+}
+
+
+
+
+/* MEDIA QUERIES MAX-WIDTH 767*/
+
+@media screen and (max-width: 767px) {
+
+    /*FOOTER INDEX-NOSOTROS-SABORES-PRODUCTOS-DELIVERY*/
+
+    .footer_columnas_1 {
+        order: 1;
+    }
+
+    /* INDEX SABORES */
+
+    .nuestros-sabores {
+        font-size: 2.25rem;
+    }
+
+    .sabores-helados {
+        font-size: 1.2rem;
+    }
+
+    .index-section-1_helados {
+        padding-inline: 2rem;
+    }
+
+    /* INDEX PRODUCTOS*/
+
+    .index-section-3 {
+
+        &_productos {
+            padding-inline: 2rem;
+
+            &_productos_item_img_texto {
+                font-size: 1rem;
+            }
+        }
+
+        &_titulo {
+            font-size: 2.25rem;
+        }
+    }
+
+    /* INDEX DELIVERY */
+
+    .delivery_titular_negro_retiras, .delivery_titular_negro_llevamos {
+        font-size: 3.7rem;
+    }
+
+    .delivery_titular_verde {
+        font-size: 2rem;
+    }
+
+    /* INDEX FOOTER*/
+
+    .footer_columnas {
+        flex-direction: column;
+        align-items: center!important;
+        padding-inline: 3rem;
+    }
+
+    .footer_columnas_2_titulo,
+    .footer_columnas_parrafo {
+        text-align: center;
+    }
+
+    /* DELIVERY SECTION 1 */
+
+    .imagen-delivery {
+        max-width: 35%;
+        padding-inline: 1rem;
+        border-radius: 40px;
+    }
+
+    /*PRODUCTOS SECTION 1*/
+
+    .productos-section-1 {
+        justify-content: center;
+
+        &_indice {
+            width: 60%;
+
+            &_item_texto {
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    .productos-section-2_titulo {
+        padding-bottom: 3rem;
+    }
+
+    /*SABORES SECTION 1*/
+
+    .sabores-section-1 {
+        justify-content: center;
+
+        &_indice {
+            width: 75%;
+
+            &_item_texto {
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    .sabores-section-2_titulo {
+        padding-bottom: 3rem;
+    }
+}
+
+
+
+
+/* MEDIA QUERIES MAX-WIDTH 576*/
+
+@media screen and (max-width: 576px) {
+
+    /* INDEX-NOSOTROS-SABORES-PRODUCTOS-DELIVERY*/
+
+    .container {
+        padding-inline: 2rem;
+    }
+
+    .container.mobile {
+        padding-right: calc(var(--bs-gutter-x) * 1);
+        padding-left: calc(var(--bs-gutter-x) * 1);
+    }
+
+    /*INDEX SECTION 1*/
+
+    .index-section-1 { 
+        display: none;
+    }
+
+    .index-section-1-mobile {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-block: 2rem;
+    }
+
+    /*INDEX SECTION 3*/
+
+    .index-section-3_productos {
+        padding-inline: 0rem;
+
+        &_item_img_texto {
+            font-size: 0.9rem;
+        }
+    }
+
+    /* INDEX DELIVERY */
+
+    .index-section-4 {
+        padding: 2rem 2rem;
+    }
+
+    .delivery_titular_negro_retiras, .delivery_titular_negro_llevamos {
+        font-size: 2.7rem;
+    }
+    
+    .delivery_titular_verde {
+        font-size: 2.1rem;
+    }
+
+    /* NOSOTROS TITULO HEADER */
+
+    .titulo-header {
+        margin: 0 0rem;
+        top: 75%;
+        font-size: 2.75rem;
+    }
+
+    .nosotros_section_1 {
+
+        &_historia_titulo {
+            line-height: 2rem;
+            font-size: 2rem;
+        }
+    
+        &_historia_subtitulo {
+            font-size: 1.8rem;
+        }
+    }
+
+    /* DELIVERY SECTION 1 */
+
+    .imagen-delivery.dos {
+        display: none;
+    }
+
+    .imagen-delivery {
+        max-width: 50%;
+        padding-inline: 0.5rem;
+        border-radius: 40px;
+    }
+
+    /*PRODUCTOS SECTION 1*/
+
+    .productos-section-1_indice {
+        width: 90%;
+
+        &_item_texto {
+            font-size: 0.8rem;
+        }
+    }
+
+    /*SABORES SECTION 1*/
+
+    .sabores-section-1_indice {
+        width: 100%;
+
+        &_item_texto {
+            font-size: 0.8rem;
+        }
+    }
+}
+
+/* MEDIA QUERIES MAX-WIDTH 544*/
+
+@media screen and (max-width: 544px) {
+
+    /*PRODUCTOS SECTION 1*/
+
+    .productos-section-1_indice {
+        width: 80%;
+    }
+
+    .productos-section-2 {
+
+        &_titulo {
+            padding-bottom: 2.7rem;
+            font-size: 2.4rem;
+        }
+    
+        &_productos {
+            justify-content: center;
+    
+            &_item {
+                display: flex;
+                flex-direction: column;
+                max-width: 18rem;
+            }
+        }
+    }
+
+
+
+    /*SABORES SECTION 1*/
+
+    .sabores-section-2 {
+
+        &_titulo {
+            padding-bottom: 2.7rem;
+            font-size: 2.4rem;
+        }
+    
+        &_sabores {
+            justify-content: center;
+    
+            &_item {
+                display: flex;
+                flex-direction: column;
+                max-width: 18rem;
+            }
+        }
+    }
+}
+
+
+/* MEDIA QUERIES MAX-WIDTH 430*/
+
+@media screen and (max-width: 430px) {
+
+    /*INDEX DELIVERY */
+
+    .container {
+        padding-inline: 1rem;
+    }
+
+    .delivery_titular_negro_retiras, .delivery_titular_negro_llevamos {
+        font-size: 2.3rem;
+    }
+
+    .delivery_titular_verde {
+        font-size: 1.7rem;
+    }
+
+    .index-section-3_productos_item_img_texto {
+        font-size: 0.8rem;
+    }
+
+    /*DELIVERY SECTION 1*/
+
+    .imagen-delivery.uno,
+    .imagen-delivery.dos {
+        display: none;
+    }
+
+    .imagen-delivery {
+        max-width: 100%;
+    }
+
+    /*PRODUCTOS SECTION 1 */
+
+    .productos-section-2_productos_item_subtitulo {
+        font-size: 0.8rem;
+    }
+
+    /*SABORES SECTION 1 */
+
+    .sabores-section-2_sabores_item_subtitulo {
+        font-size: 0.8rem;
+    }
+
+    /* PRUEBA CORRECCIÓN PROBLEMA CON IOS*/
+
+    .header-index,
+    .index-section-2,
+    .index-section-4,
+    .header-nosotros,
+    .header-sabores,
+    .header-productos,
+    .header-delivery {
+        background-attachment: unset;
+    }
+}

@@ -1,0 +1,50 @@
+$color-verde:#009246;
+$color-blanco:#ffffff;
+$color-negro:#1E1E1E;
+$color-rojo:#ff2a40;
+$fondo-indice: rgba(255, 255, 255, 0.45);
+$sombra-texto-verde:0px 6px 6px rgb(0,0,0,0.40);
+$sombra-texto-negro:0px 2px 4px rgb(0,0,0,0.40);
+$sombra-botones:1px 4px 6px rgb(0,0,0,0.40);
+
+/* mixin indice */
+
+@mixin indice-formato {
+    padding-top: 0.3rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: sticky;
+    top: 0;
+    background-color: $fondo-indice!important;
+    z-index: 3;
+}
+
+@mixin indice-item {
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    transition: .3s;
+}
+
+@mixin indice-img {
+    border-radius: 20px;
+    width: 100%;
+}
+
+@mixin indice-texto {
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+@mixin indice-hover {
+    scale: 1.05;
+}
+
+@mixin indice-p {
+    color: $color-verde;
+}

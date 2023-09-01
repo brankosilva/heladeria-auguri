@@ -1,0 +1,108 @@
+/* CONFIGURACION FOOOTER GENERAL---------------------------*/
+
+
+
+footer {
+    background-color: $color-negro;
+    position: relative;
+    color: $color-blanco;
+    padding-top: 2rem;
+
+    .footer_columnas > * {
+        flex: 1;
+    }
+
+    .footer_columnas {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 2rem;
+        flex-wrap: wrap;
+    
+        &_1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            &_texto {
+                font-weight: 200;
+                text-shadow: $sombra-texto-negro;
+                text-align: center;
+            }
+    
+            &_img {
+                width: 40%;
+                margin-bottom: 1rem;
+            }
+        
+            &_texto_negrita {
+                font-weight: 700;
+                text-shadow: $sombra-texto-negro;
+                text-align: center;
+            }
+        }
+    
+        &_2 {
+            display: flex;
+            flex-direction: column;
+        
+            .footer_columnas_2_titulo {
+                margin-bottom: 0.5rem;
+            }
+        }
+    
+        &_3{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        
+            iframe {
+                width: 100%;
+                max-height: 40vh;
+                border-radius: 20px;
+            }
+        
+            &_parrafo.direccion {
+                padding-inline: 2.2rem;
+                text-align: center;
+            }
+        }
+    }
+    .botones_redes {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    
+        & a:hover {
+            scale: 1.1;
+            transition: .2s;
+        }
+    
+        &_boton {
+            margin-inline: 0.2rem;
+            margin-bottom: 1rem;
+    
+            .bi.bi-facebook,
+            .bi.bi-instagram,
+            .bi.bi-bicycle {
+            color: $color-blanco;
+            }
+        }
+    }
+    
+    .powered {
+        background-color: $color-verde;
+        width: 100%;
+        text-align: center;
+        color: $color-blanco;
+    
+        &_texto {
+        margin-bottom: 0rem;
+        }
+    }      
+}

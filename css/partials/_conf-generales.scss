@@ -1,0 +1,43 @@
+img {
+    max-width: 100%;
+}
+
+:root {
+    font-size: 16px;
+}
+
+h1 {
+    color: $color-negro;
+    font-weight: 700;
+    font-size: 3.25rem;
+    text-shadow: $sombra-texto-negro;
+    line-height: unset;
+}
+
+h2 {
+    color: $color-verde;
+    font-size: 3rem;
+    text-shadow: $sombra-texto-verde;
+    line-height: unset;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 2rem;
+    text-shadow: $sombra-texto-negro;
+    line-height: unset;
+    margin-bottom: 0 !important;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1rem;
+    color: $color-negro;
+    margin-bottom: 0 !important;
+}
+
+.footer_columnas_parrafo {
+    font-weight: 200;
+    font-size: 0.85rem;
+    color: $color-blanco;
+}

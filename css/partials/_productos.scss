@@ -1,0 +1,97 @@
+/*PRODUCTOS-HEADER---------------------------------------*/
+
+.header-productos {
+    background-image: url("../img/PORTADAS/portada-productos.jpg");
+    min-height: 60vh;
+    position: relative;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+/*PRODUCTOS MAIN SECTION 1  -------------------------------------------*/
+
+.productos-section-1 {
+    @include indice-formato;
+
+    &_indice {
+        width: 45%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        column-gap: 0.5rem;
+
+        &_item {
+            @include indice-item;
+
+            &_img {
+                @include indice-img;
+            }
+
+            &_texto {
+                @include indice-texto;
+            }
+
+            &:hover {
+                @include indice-hover;
+
+                & p {
+                    @include indice-p;
+                }
+            }
+        }
+    }
+}
+
+
+/*PRODUCTOS MAIN SECTION 2  -------------------------------------------*/
+
+.productos-section-2 {
+
+    &_titulo {
+        padding-bottom: 4rem;
+        padding-top: 2.5rem;
+    }
+
+    &_productos {
+        display: flex;
+        justify-content: flex-start;
+        align-items: start;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-bottom: 1rem;
+
+        &_item {
+            display: flex;
+            flex-direction: column;
+            max-width: 14rem;
+
+            &_img {
+                border-radius: 30px;
+                margin-bottom: 1.2rem;
+                transition: 0.3s;
+
+                &:hover {
+                    transform:scale(1.05)
+                }
+            }
+
+            &_titulo {
+                font-size: 1.4rem;
+                text-shadow: none;
+                font-weight: 700;
+                text-align: center;
+            }
+
+            &_subtitulo {
+                text-align: center;
+                margin-top: -0.3rem;
+                font-size: 0.9rem;
+            }
+        }
+
+        &.postres {
+            margin-bottom: 3rem;
+        }
+    }
+}

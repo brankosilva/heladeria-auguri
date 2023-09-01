@@ -1,0 +1,78 @@
+/* BOTON VER */
+.boton-ver {
+    text-decoration: none;
+    color: $color-verde;
+    background-color: $color-blanco;
+    border: 2px solid $color-verde;
+    padding: 0.3rem;
+    border-radius: 20px;
+    width: 6rem;
+    font-weight: 700;
+    text-align: center;
+    transition: .6s;
+
+    &:hover {
+        background-color:$color-verde;
+        color: $color-blanco;  
+    }
+}
+
+
+
+/* BOTONES DELIVERY */
+.botones-delivery {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    & a {
+        transition: .5s;
+
+        
+        &:hover {
+            scale: 1.05;
+        }
+    }
+
+    &_peya {
+        background-image: url(../img/redes/pedidosya.jpg);
+        background-size: cover;
+        background-position: center;
+        border: 2px solid $color-rojo;
+        border-radius: 20px;
+        min-width: 10rem;
+        min-height: 2.5rem;
+        box-shadow: $sombra-botones;
+    }
+
+    &_propio {
+        text-decoration: none;
+        color: $color-verde;
+        text-align: center;
+        background-color: $color-blanco;
+        border: 2px solid $color-verde;
+        padding: 0.5rem;
+        border-radius: 20px;
+        width: 10rem;
+        font-weight: 800;
+        box-shadow: $sombra-botones;
+    }
+}
+
+
+
+/* BOTON WPP */
+.bi.bi-whatsapp {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    transition: .2s;
+    color: $color-verde;
+    font-size: 2rem;
+
+    &:hover {
+        scale: 1.1;
+    }  
+}

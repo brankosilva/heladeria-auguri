@@ -1,23 +1,6 @@
 @charset "UTF-8";
-/*CONFIGURACIONES GENERALES--------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-*::-moz-selection {
-  background-color: #009246;
-  color: #ffffff;
-}
-
-*::selection {
-  background-color: #009246;
-  color: #ffffff;
-}
-
+/* mixin indice */
 img {
   max-width: 100%;
 }
@@ -59,6 +42,91 @@ p {
 .footer_columnas_parrafo {
   font-weight: 200;
   font-size: 0.85rem;
+  color: #ffffff;
+}
+
+/* BOTON VER */
+.boton-ver {
+  text-decoration: none;
+  color: #009246;
+  background-color: #ffffff;
+  border: 2px solid #009246;
+  padding: 0.3rem;
+  border-radius: 20px;
+  width: 6rem;
+  font-weight: 700;
+  text-align: center;
+  transition: 0.6s;
+}
+.boton-ver:hover {
+  background-color: #009246;
+  color: #ffffff;
+}
+
+/* BOTONES DELIVERY */
+.botones-delivery {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.botones-delivery a {
+  transition: 0.5s;
+}
+.botones-delivery a:hover {
+  scale: 1.05;
+}
+.botones-delivery_peya {
+  background-image: url(../img/redes/pedidosya.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #ff2a40;
+  border-radius: 20px;
+  min-width: 10rem;
+  min-height: 2.5rem;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.4);
+}
+.botones-delivery_propio {
+  text-decoration: none;
+  color: #009246;
+  text-align: center;
+  background-color: #ffffff;
+  border: 2px solid #009246;
+  padding: 0.5rem;
+  border-radius: 20px;
+  width: 10rem;
+  font-weight: 800;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* BOTON WPP */
+.bi.bi-whatsapp {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  transition: 0.2s;
+  color: #009246;
+  font-size: 2rem;
+}
+.bi.bi-whatsapp:hover {
+  scale: 1.1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+*::-moz-selection {
+  background-color: #009246;
+  color: #ffffff;
+}
+
+*::selection {
+  background-color: #009246;
   color: #ffffff;
 }
 
@@ -161,112 +229,6 @@ header .nav-link {
   font-family: "Poppins", sans-serif;
 }
 
-/* CONFIGURACION HEADER GENERAL MOBILE----------------------*/
-/* CONFIGURACION FOOOTER GENERAL---------------------------*/
-footer {
-  background-color: #1E1E1E;
-  position: relative;
-  color: #ffffff;
-  padding-top: 2rem;
-}
-footer .footer_columnas > * {
-  flex: 1;
-}
-footer .footer_columnas {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-footer .footer_columnas_1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-footer .footer_columnas_1_texto {
-  font-weight: 200;
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
-  text-align: center;
-}
-footer .footer_columnas_1_img {
-  width: 40%;
-  margin-bottom: 1rem;
-}
-footer .footer_columnas_1_negrita {
-  font-weight: 700;
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
-  text-align: center;
-}
-footer .footer_columnas_2 {
-  display: flex;
-  flex-direction: column;
-}
-footer .footer_columnas_2 .footer_columnas_2_titulo {
-  margin-bottom: 0.5rem;
-}
-footer .footer_columnas_3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-}
-footer .footer_columnas_3 iframe {
-  width: 100%;
-  max-height: 40vh;
-  border-radius: 20px;
-}
-footer .footer_columnas_3_parrafo.direccion {
-  padding-inline: 2.2rem;
-  text-align: center;
-}
-footer .botones_redes {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-top: 1rem;
-  font-size: 1.5rem;
-}
-footer .botones_redes a:hover {
-  scale: 1.1;
-  transition: 0.2s;
-}
-footer .botones_redes_boton {
-  margin-inline: 0.2rem;
-  margin-bottom: 1rem;
-}
-footer .botones_redes_boton .bi.bi-facebook,
-footer .botones_redes_boton .bi.bi-instagram,
-footer .botones_redes_boton .bi.bi-bicycle {
-  color: #ffffff;
-}
-footer .powered {
-  background-color: #009246;
-  width: 100%;
-  text-align: center;
-  color: #ffffff;
-}
-footer .powered_texto {
-  margin-bottom: 0rem;
-}
-
-/* BOTON WPP ------------------------------------------------*/
-.bi.bi-whatsapp {
-  position: fixed;
-  right: 2rem;
-  bottom: 2rem;
-  transition: 0.2s;
-  color: #009246;
-  font-size: 2rem;
-}
-.bi.bi-whatsapp:hover {
-  scale: 1.1;
-}
-
-/* FIN CONFIGURACIONES GENERALES-------------------------*/
-/* INDEX ------------------------------------------------*/
 /*INDEX MAIN SECTION 1  -------------------------------------------*/
 .index-section-1 {
   display: flex;
@@ -282,7 +244,6 @@ footer .powered_texto {
   margin-bottom: 0 !important;
   padding-inline: 3rem;
 }
-
 .index-section-1_helados {
   justify-content: center;
   align-items: center;
@@ -347,23 +308,6 @@ footer .powered_texto {
 }
 .index-section-1_helados a:hover h3 {
   color: #009246;
-}
-
-.boton-ver {
-  text-decoration: none;
-  color: #009246;
-  background-color: #ffffff;
-  border: 2px solid #009246;
-  padding: 0.3rem;
-  border-radius: 20px;
-  width: 6rem;
-  font-weight: 700;
-  text-align: center;
-  transition: 0.6s;
-}
-.boton-ver:hover {
-  background-color: #009246;
-  color: #ffffff;
 }
 
 /*INDEX MAIN SECTION 2  -------------------------------------------*/
@@ -483,43 +427,6 @@ footer .powered_texto {
   margin-top: unset;
 }
 
-.botones-delivery {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-.botones-delivery a {
-  transition: 0.5s;
-}
-.botones-delivery a:hover {
-  scale: 1.05;
-}
-.botones-delivery_peya {
-  background-image: url(../img/redes/pedidosya.jpg);
-  background-size: cover;
-  background-position: center;
-  border: 2px solid #ff2a40;
-  border-radius: 20px;
-  min-width: 10rem;
-  min-height: 2.5rem;
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.4);
-}
-.botones-delivery_propio {
-  text-decoration: none;
-  color: #009246;
-  text-align: center;
-  background-color: #ffffff;
-  border: 2px solid #009246;
-  padding: 0.5rem;
-  border-radius: 20px;
-  width: 10rem;
-  font-weight: 800;
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.4);
-}
-
-/*NOSOTROS-----------------------------------------------*/
 /*NOSOTROS-HEADER----------------------------------------*/
 .header-nosotros {
   background-image: url("../img/PORTADAS/portada-nosotros.jpg");
@@ -558,7 +465,6 @@ footer .powered_texto {
   margin-right: 3rem;
 }
 
-/*SABORES------------------------------------------------*/
 /*SABORES-HEADER-----------------------------------------*/
 .header-sabores {
   background-image: url("../img/PORTADAS/portada-sabores.jpg");
@@ -614,47 +520,13 @@ footer .powered_texto {
 }
 
 /*SABORES MAIN SECTION 2  -------------------------------------------*/
-.sabores-section-2_titulo {
-  padding-bottom: 4rem;
-  padding-top: 2.5rem;
-}
-.sabores-section-2_sabores {
-  display: flex;
-  justify-content: flex-start;
-  align-items: start;
-  flex-wrap: wrap;
-  gap: 2rem;
-  margin-bottom: 1rem;
-}
-.sabores-section-2_sabores_item {
-  display: flex;
-  flex-direction: column;
-  max-width: 14rem;
-}
-.sabores-section-2_sabores_item_img {
-  border-radius: 30px;
-  margin-bottom: 1.2rem;
-  transition: 0.3s;
-}
 .sabores-section-2_sabores_item_img:hover {
   transform: scale(1.05);
-}
-.sabores-section-2_sabores_item_titulo {
-  font-size: 1.4rem;
-  text-shadow: none;
-  font-weight: 700;
-  text-align: center;
-}
-.sabores-section-2_sabores_item_subtitulo {
-  text-align: center;
-  margin-top: -0.3rem;
-  font-size: 0.9rem;
 }
 .sabores-section-2_sabores.frutales {
   margin-bottom: 3rem;
 }
 
-/*PRODUCTOS----------------------------------------------*/
 /*PRODUCTOS-HEADER---------------------------------------*/
 .header-productos {
   background-image: url("../img/PORTADAS/portada-productos.jpg");
@@ -710,11 +582,11 @@ footer .powered_texto {
 }
 
 /*PRODUCTOS MAIN SECTION 2  -------------------------------------------*/
-.productos-section-2_titulo {
+.productos-section-2_titulo, .sabores-section-2_titulo {
   padding-bottom: 4rem;
   padding-top: 2.5rem;
 }
-.productos-section-2_productos {
+.productos-section-2_productos, .sabores-section-2_sabores {
   display: flex;
   justify-content: flex-start;
   align-items: start;
@@ -722,36 +594,34 @@ footer .powered_texto {
   gap: 2rem;
   margin-bottom: 1rem;
 }
-.productos-section-2_productos_item {
+.productos-section-2_productos_item, .sabores-section-2_sabores_item {
   display: flex;
   flex-direction: column;
   max-width: 14rem;
 }
-.productos-section-2_productos_item_img {
+.productos-section-2_productos_item_img, .sabores-section-2_sabores_item_img {
   border-radius: 30px;
   margin-bottom: 1.2rem;
   transition: 0.3s;
 }
-.productos-section-2_productos_item_img:hover {
+.productos-section-2_productos_item_img:hover, .sabores-section-2_sabores_item_img:hover {
   transform: scale(1.05);
 }
-.productos-section-2_productos_item_titulo {
+.productos-section-2_productos_item_titulo, .sabores-section-2_sabores_item_titulo {
   font-size: 1.4rem;
   text-shadow: none;
   font-weight: 700;
   text-align: center;
 }
-.productos-section-2_productos_item_subtitulo {
+.productos-section-2_productos_item_subtitulo, .sabores-section-2_sabores_item_subtitulo {
   text-align: center;
   margin-top: -0.3rem;
   font-size: 0.9rem;
 }
-.productos-section-2_productos.postres {
+.productos-section-2_productos.postres, .postres.sabores-section-2_sabores {
   margin-bottom: 3rem;
 }
 
-/*DELIVERY-----------------------------------------------*/
-/*DELIVERY-HEADER----------------------------------------*/
 .header-delivery {
   background-image: url("../img/PORTADAS/portada-delivery.jpg");
   min-height: 100vh;
@@ -790,7 +660,97 @@ footer .powered_texto {
   transition: 0.5s;
 }
 
-/* MEDIAAAAA QUERIIIIIIIIIIIIIEEEEES */
+/* CONFIGURACION FOOOTER GENERAL---------------------------*/
+footer {
+  background-color: #1E1E1E;
+  position: relative;
+  color: #ffffff;
+  padding-top: 2rem;
+}
+footer .footer_columnas > * {
+  flex: 1;
+}
+footer .footer_columnas {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+footer .footer_columnas_1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer_columnas_1_texto {
+  font-weight: 200;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+footer .footer_columnas_1_img {
+  width: 40%;
+  margin-bottom: 1rem;
+}
+footer .footer_columnas_1_texto_negrita {
+  font-weight: 700;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+footer .footer_columnas_2 {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer_columnas_2 .footer_columnas_2_titulo {
+  margin-bottom: 0.5rem;
+}
+footer .footer_columnas_3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+footer .footer_columnas_3 iframe {
+  width: 100%;
+  max-height: 40vh;
+  border-radius: 20px;
+}
+footer .footer_columnas_3_parrafo.direccion {
+  padding-inline: 2.2rem;
+  text-align: center;
+}
+footer .botones_redes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+footer .botones_redes a:hover {
+  scale: 1.1;
+  transition: 0.2s;
+}
+footer .botones_redes_boton {
+  margin-inline: 0.2rem;
+  margin-bottom: 1rem;
+}
+footer .botones_redes_boton .bi.bi-facebook,
+footer .botones_redes_boton .bi.bi-instagram,
+footer .botones_redes_boton .bi.bi-bicycle {
+  color: #ffffff;
+}
+footer .powered {
+  background-color: #009246;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+}
+footer .powered_texto {
+  margin-bottom: 0rem;
+}
+
+/*media queries */
 /*MEDIA QUERIES MAX-WIDTH 1200*/
 @media screen and (max-width: 1200px) {
   /*PRODUCTOS INDICE*/
@@ -933,7 +893,7 @@ footer .powered_texto {
   .productos-section-1_indice_item_texto {
     font-size: 0.8rem;
   }
-  .productos-section-2_titulo {
+  .productos-section-2_titulo, .sabores-section-2_titulo {
     padding-bottom: 3rem;
   }
   /*SABORES SECTION 1*/
@@ -1031,14 +991,14 @@ footer .powered_texto {
   .productos-section-1_indice {
     width: 80%;
   }
-  .productos-section-2_titulo {
+  .productos-section-2_titulo, .sabores-section-2_titulo {
     padding-bottom: 2.7rem;
     font-size: 2.4rem;
   }
-  .productos-section-2_productos {
+  .productos-section-2_productos, .sabores-section-2_sabores {
     justify-content: center;
   }
-  .productos-section-2_productos_item {
+  .productos-section-2_productos_item, .sabores-section-2_sabores_item {
     display: flex;
     flex-direction: column;
     max-width: 18rem;
@@ -1081,7 +1041,7 @@ footer .powered_texto {
     max-width: 100%;
   }
   /*PRODUCTOS SECTION 1 */
-  .productos-section-2_productos_item_subtitulo {
+  .productos-section-2_productos_item_subtitulo, .sabores-section-2_sabores_item_subtitulo {
     font-size: 0.8rem;
   }
   /*SABORES SECTION 1 */

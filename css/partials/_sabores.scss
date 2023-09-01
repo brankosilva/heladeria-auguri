@@ -1,0 +1,83 @@
+/*SABORES-HEADER-----------------------------------------*/
+
+.header-sabores {
+    background-image: url("../img/PORTADAS/portada-sabores.jpg");
+    min-height: 60vh;
+    position: relative;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+/*SABORES-MAIN SECTION 1-----------------------------------------*/
+
+.sabores-section-1 {
+    @include indice-formato;
+
+    &_indice {
+        width: 58%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        column-gap: 1rem;
+
+        &_item {
+            @include indice-item;
+
+            &_img {
+                @include indice-img;
+            }
+
+            &_texto {
+                @include indice-texto;
+            }
+
+            &:hover {
+                @include indice-hover;
+
+                & p {
+                    @include indice-p;
+                }
+            }
+        }
+    }
+}
+
+
+
+/*SABORES MAIN SECTION 2  -------------------------------------------*/
+
+.sabores-section-2 {
+    &_titulo {
+        @extend .productos-section-2_titulo;
+    }
+    
+    &_sabores {
+        @extend .productos-section-2_productos;
+    
+        &_item {
+            @extend .productos-section-2_productos_item;
+    
+            &_img {
+                @extend .productos-section-2_productos_item_img;
+    
+                &:hover {
+                    transform:scale(1.05)
+                }
+            }
+    
+            &_titulo {
+                @extend .productos-section-2_productos_item_titulo;
+            }
+    
+            
+            &_subtitulo {
+                @extend .productos-section-2_productos_item_subtitulo;
+            }
+        }
+    }
+    
+    &_sabores.frutales {
+        margin-bottom: 3rem;
+    }
+}

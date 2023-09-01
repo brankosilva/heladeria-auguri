@@ -1,0 +1,359 @@
+/* CONFIGURACION HEADER GENERAL PC----------------------*/
+
+header {
+    background-image: url("../img/PORTADAS/portada-header-index.jpg");
+    min-height: 100vh;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+
+    .titulo-header {
+        color: $color-blanco;
+        position: absolute;
+        margin: 0 3rem;
+        top: 75%;
+    } 
+
+    nav > ul {
+        display: flex;
+        color: $color-blanco;
+        align-items: center;
+        list-style-type: none;
+        margin-bottom: 0 !important;
+        padding-left: 0 !important;
+
+        .menu_pc_links {
+            display: flex;
+            justify-content:space-around;
+            width: 100%;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            row-gap: 1rem;
+
+            &_item {
+                a {
+                    color: $color-blanco;
+                    text-decoration: none;
+                    font-weight: 700;
+                    text-shadow: $sombra-texto-negro;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }  
+                }
+                &.active {
+                        text-decoration: underline;
+                    }
+
+                &:hover {
+                    scale: 1.1;
+                    transition: .3s;
+                }
+            }
+
+            &--artesanal {
+                text-align: left;
+                font-weight: 700;
+                max-width: 0rem;
+                min-width: 8.5rem;
+                text-shadow: $sombra-texto-negro;
+            }
+        } 
+
+        .menu_pc_links--logo {
+            display: flex;
+            padding-inline: 1rem;
+            flex-wrap: wrap;
+            row-gap: 1rem;
+
+            &:hover {
+                scale: 1.01;
+                transition: .3s;
+            }
+        }
+    }
+
+
+    
+    .menu_mobile {
+        display: none;
+    
+        .bg-body-tertiary {
+            --bs-bg-opacity: 0.1;
+        }
+    
+        .navbar {
+            --bs-navbar-toggler-padding-y: 0.25rem;
+            --bs-navbar-toggler-padding-x: 0.40rem;
+            --bs-navbar-toggler-font-size: none;
+    
+            .container.mobile {
+                padding-right: calc(var(--bs-gutter-x) * 0.5);
+                padding-left: calc(var(--bs-gutter-x) * 0.5);
+    
+                a {
+                    .logo-mobile {
+                        max-width: 30%;
+                    }
+                }
+    
+                .navbar-toggler {
+                    background-color: $color-blanco;
+                    color: #009246;
+                }
+    
+                .navbar-collapse {
+        
+                    .navbar-nav {
+                    --bs-nav-link-hover-color: rgb(239 4 4);
+                    align-items: flex-end;
+                    }
+    
+                    .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+                        color: rgb(0 146 87);
+                    }
+                }
+            }
+        }
+    }
+    
+    .nav-link {
+        color: $color-blanco;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+    }
+}
+
+/*INDEX MAIN SECTION 1  -------------------------------------------*/
+
+.index-section-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-block: 2rem;
+
+    &_titulo {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-bottom: 0 !important;
+        padding-inline: 3rem;
+    }
+
+    &_helados {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 2rem;
+    
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+            "cremas chocolates dulces frutales";
+    
+        &.cremas {
+            grid-area: cremas;
+        }
+        
+        &.chocolates {
+            grid-area: chocolates;
+        }
+        
+        &.dulces {
+            grid-area: dulces;
+        }
+        
+        &.frutales {
+            grid-area: frutales;
+        }
+    
+        &_sabores {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        
+            &_subtitulo {
+                font-size: 1.5rem;
+                color: $color-negro;
+                text-shadow: $sombra-texto-negro;
+            }
+        }
+    }
+}
+
+
+.index-section-1-mobile {
+    display: none;
+    gap: 2rem;
+}
+
+.w-100 {
+    width: unset !important;
+}
+
+.carousel-control-next {
+    right: -50px;
+}
+
+.carousel-control-prev {
+    left: -50px;
+}
+
+.carousel-indicators {
+    bottom: -42px;
+}
+
+.index-section-1_helados a {
+    transition: .5s;
+
+    &:hover {
+        scale: 1.05;
+    
+        & h3 {
+            color: $color-verde;
+        }
+    } 
+}
+
+/*INDEX MAIN SECTION 2  -------------------------------------------*/
+
+.index-section-2 {
+    background-image: url(../img/PORTADAS/portada-sect-2.png);
+    min-height: 70vh;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/*INDEX MAIN SECTION 3  -------------------------------------------*/
+
+.index-section-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+
+    &_bandera-top {
+        position: absolute;
+        bottom: 100%;
+        max-height: 1.5%;
+        width: 100%;
+    }
+    
+    &_bandera-bottom {
+        position: absolute;
+        top: 99%;
+        max-height: 1.5%;
+        width: 100%;
+    }
+
+    &_titulo {
+        padding-top: 1rem;
+        align-self: flex-start;
+        margin-bottom: 0 !important;
+    }
+
+    &_productos {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding-inline: 6rem;
+    
+        &_item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+    
+            &_img {
+                border-radius: 20px;
+    
+                &_texto {
+                    font-weight: 600;
+                    text-shadow: $sombra-texto-negro;
+                    font-size: 1.5rem;
+                }
+            }
+    
+            & a {
+                text-decoration: none;
+                transition: .5s;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+    
+                &:hover {
+                    scale: 1.05;
+    
+                    & p {
+                        color: $color-verde;
+                    }
+                }
+            }
+
+            &.shakes,
+            &.postres {
+             margin-top: 5rem;
+            }
+        }
+    }
+
+    &_boton-productos{ 
+        display: flex;
+        justify-content: center;
+        padding-bottom: 2rem;
+    }
+}
+
+/*INDEX MAIN SECTION 4  -------------------------------------------*/
+
+.index-section-4 {
+    background-image: url(../img/delivery/auguri-delivery-index.png);
+    min-height: 80vh;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 3rem;
+}
+
+.delivery_titular {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    &_negro_retiras {
+        margin-bottom: -8%;
+    }
+
+    &_negro_llevamos {
+        margin-bottom: -4%;
+    }
+
+    &_negro_retiras,
+    &_negro_llevamos {
+    font-size: 4.75rem;
+    text-align: center;
+    }
+
+    &_verde {
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 0 !important;
+        margin-top: unset;
+    }
+}
