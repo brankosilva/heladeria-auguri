@@ -34,6 +34,12 @@ footer {
             &_img {
                 width: 40%;
                 margin-bottom: 1rem;
+                transition: 4s;
+
+                &:hover {
+                    scale: 1.01;
+                    transform: rotatey(360deg);
+                }
             }
         
             &_texto_negrita {

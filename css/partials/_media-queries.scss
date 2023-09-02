@@ -207,10 +207,8 @@
 
     /* DELIVERY SECTION 1 */
 
-    .imagen-delivery {
-        max-width: 35%;
-        padding-inline: 1rem;
-        border-radius: 40px;
+    .delivery-imagenes > img {
+        width: 300px;
     }
 
     /*PRODUCTOS SECTION 1*/
@@ -338,14 +336,8 @@
 
     /* DELIVERY SECTION 1 */
 
-    .imagen-delivery.dos {
-        display: none;
-    }
-
-    .imagen-delivery {
-        max-width: 50%;
-        padding-inline: 0.5rem;
-        border-radius: 40px;
+    .delivery-imagenes > img {
+        width: 250px;
     }
 
     /*PRODUCTOS SECTION 1*/
@@ -445,13 +437,8 @@
 
     /*DELIVERY SECTION 1*/
 
-    .imagen-delivery.uno,
-    .imagen-delivery.dos {
-        display: none;
-    }
-
-    .imagen-delivery {
-        max-width: 100%;
+    .delivery-imagenes > img {
+        width: 225px;
     }
 
     /*PRODUCTOS SECTION 1 */
