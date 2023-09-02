@@ -397,12 +397,45 @@ header {
     align-items: center;
     margin-bottom: 1rem;
 
+
     &_negro_retiras {
-        margin-bottom: -8%;
+        margin-bottom: -7%;
+
+        display: flex;
+        user-select: none;
+
+        &_letras {
+            .letter {
+                transition: ease-out 1s;
+                transform: translateY(40%);
+            }
+
+            &:hover {
+                .letter {
+                    transform: translateY(-200%);
+                }
+            }
+        }
     }
 
     &_negro_llevamos {
-        margin-bottom: -4%;
+        margin-bottom: -2%;
+
+        display: flex;
+        user-select: none;
+
+        &_letras {
+            .letter {
+                transition: ease-out 1s;
+                transform: translateY(40%);
+            }
+
+            &:hover {
+                .letter {
+                    transform: translateY(-200%);
+                }
+            }
+        }
     }
 
     &_negro_retiras,
@@ -414,7 +447,23 @@ header {
     &_verde {
         text-align: center;
         font-weight: 700;
-        margin-bottom: 0 !important;
         margin-top: unset;
+        margin-bottom: 2%;
+
+        display: flex;
+        user-select: none;
+
+        &_letras {
+            .letter {
+                transition: ease-out 1s;
+                transform: translateY(40%);
+            }
+
+            &:hover {
+                .letter {
+                    transform: translateY(-200%);
+                }
+            }
+        }
     }
 }

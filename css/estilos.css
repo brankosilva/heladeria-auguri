@@ -452,10 +452,32 @@ header .nav-link {
   margin-bottom: 1rem;
 }
 .delivery_titular_negro_retiras {
-  margin-bottom: -8%;
+  margin-bottom: -7%;
+  display: flex;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.delivery_titular_negro_retiras_letras .letter {
+  transition: ease-out 1s;
+  transform: translateY(40%);
+}
+.delivery_titular_negro_retiras_letras:hover .letter {
+  transform: translateY(-200%);
 }
 .delivery_titular_negro_llevamos {
-  margin-bottom: -4%;
+  margin-bottom: -2%;
+  display: flex;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.delivery_titular_negro_llevamos_letras .letter {
+  transition: ease-out 1s;
+  transform: translateY(40%);
+}
+.delivery_titular_negro_llevamos_letras:hover .letter {
+  transform: translateY(-200%);
 }
 .delivery_titular_negro_retiras, .delivery_titular_negro_llevamos {
   font-size: 4.75rem;
@@ -464,8 +486,19 @@ header .nav-link {
 .delivery_titular_verde {
   text-align: center;
   font-weight: 700;
-  margin-bottom: 0 !important;
   margin-top: unset;
+  margin-bottom: 2%;
+  display: flex;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.delivery_titular_verde_letras .letter {
+  transition: ease-out 1s;
+  transform: translateY(40%);
+}
+.delivery_titular_verde_letras:hover .letter {
+  transform: translateY(-200%);
 }
 
 /*NOSOTROS-HEADER----------------------------------------*/
