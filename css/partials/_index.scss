@@ -170,6 +170,19 @@ header {
         &.frutales {
             grid-area: frutales;
         }
+
+        & a {
+            transition: 0.5s;
+        
+            &:hover {
+                scale: 1.05;
+            
+                & h3 {
+                    transition: 0.6s;
+                    color: $color-verde;
+                }
+            } 
+        }
     
         &_sabores {
             display: flex;
@@ -186,9 +199,9 @@ header {
 
             &_img {
                 --color: #009246; /* the color of the border */
-                --border: 6px;   /* the thickness of the border */
-                --offset: 10px;   /* control the movement of the border */
-                --gap: 3px;       /* the gap on hover */
+                --border: 8px;   /* the thickness of the border */
+                --offset: 20px;   /* control the movement of the border */
+                --gap: 4px;       /* the gap on hover */
                 
                 border-radius: 50%;
                 cursor: pointer;
@@ -241,17 +254,6 @@ header {
     bottom: -42px;
 }
 
-.index-section-1_helados a {
-    transition: .5s;
-
-    &:hover {
-        scale: 1.05;
-    
-        & h3 {
-            color: $color-verde;
-        }
-    } 
-}
 
 /*INDEX MAIN SECTION 2  -------------------------------------------*/
 
@@ -305,16 +307,41 @@ header {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-    
+
             &_img {
                 border-radius: 20px;
-    
-                &_texto {
-                    font-weight: 600;
-                    text-shadow: $sombra-texto-negro;
-                    font-size: 1.5rem;
-                }
+                display: none;
             }
+    
+            &_img_animacion {
+                border-radius: 10px;
+                --c: #009246; /* the border color */
+                --b: 10px;    /* the border thickness*/
+                --g: 5px;     /* the gap on hover */
+                
+                padding: calc(var(--g) + var(--b));
+                --_g: #0000 25%,var(--c) 0;
+                background: 
+                    conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g))
+                    var(--_i,200%) 0  /200% var(--_i,var(--b))  no-repeat,
+                    conic-gradient(            at bottom var(--b) left  var(--b),var(--_g))
+                    0   var(--_i,200%)/var(--_i,var(--b)) 200%  no-repeat;
+                transition: .3s, background-position .3s .3s;
+                cursor: pointer;
+                
+
+                &:hover {
+                --_i: 100%;
+                transition: .3s, background-size .3s .3s;
+                }  
+            }
+    
+            &_texto {
+                font-weight: 600;
+                text-shadow: $sombra-texto-negro;
+                font-size: 1.5rem;
+            }
+            
     
             & a {
                 text-decoration: none;
@@ -328,6 +355,7 @@ header {
                     scale: 1.05;
     
                     & p {
+                        transition: .6s;
                         color: $color-verde;
                     }
                 }

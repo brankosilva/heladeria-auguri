@@ -267,6 +267,16 @@ header .nav-link {
 .index-section-1_helados.frutales {
   grid-area: frutales;
 }
+.index-section-1_helados a {
+  transition: 0.5s;
+}
+.index-section-1_helados a:hover {
+  scale: 1.05;
+}
+.index-section-1_helados a:hover h3 {
+  transition: 0.6s;
+  color: #009246;
+}
 .index-section-1_helados_sabores {
   display: flex;
   flex-direction: column;
@@ -281,9 +291,9 @@ header .nav-link {
 }
 .index-section-1_helados_sabores_img {
   --color: #009246; /* the color of the border */
-  --border: 6px; /* the thickness of the border */
-  --offset: 10px; /* control the movement of the border */
-  --gap: 3px; /* the gap on hover */
+  --border: 8px; /* the thickness of the border */
+  --offset: 20px; /* control the movement of the border */
+  --gap: 4px; /* the gap on hover */
   border-radius: 50%;
   cursor: pointer;
   padding: calc(var(--border) + var(--gap));
@@ -322,16 +332,6 @@ header .nav-link {
 
 .carousel-indicators {
   bottom: -42px;
-}
-
-.index-section-1_helados a {
-  transition: 0.5s;
-}
-.index-section-1_helados a:hover {
-  scale: 1.05;
-}
-.index-section-1_helados a:hover h3 {
-  color: #009246;
 }
 
 /*INDEX MAIN SECTION 2  -------------------------------------------*/
@@ -384,8 +384,24 @@ header .nav-link {
 }
 .index-section-3_productos_item_img {
   border-radius: 20px;
+  display: none;
 }
-.index-section-3_productos_item_img_texto {
+.index-section-3_productos_item_img_animacion {
+  border-radius: 10px;
+  --c: #009246; /* the border color */
+  --b: 10px; /* the border thickness*/
+  --g: 5px; /* the gap on hover */
+  padding: calc(var(--g) + var(--b));
+  --_g: #0000 25%,var(--c) 0;
+  background: conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) var(--_i, 200%) 0/200% var(--_i, var(--b)) no-repeat, conic-gradient(at bottom var(--b) left var(--b), var(--_g)) 0 var(--_i, 200%)/var(--_i, var(--b)) 200% no-repeat;
+  transition: 0.3s, background-position 0.3s 0.3s;
+  cursor: pointer;
+}
+.index-section-3_productos_item_img_animacion:hover {
+  --_i: 100%;
+  transition: 0.3s, background-size 0.3s 0.3s;
+}
+.index-section-3_productos_item_texto {
   font-weight: 600;
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
   font-size: 1.5rem;
@@ -402,6 +418,7 @@ header .nav-link {
   scale: 1.05;
 }
 .index-section-3_productos_item a:hover p {
+  transition: 0.6s;
   color: #009246;
 }
 .index-section-3_productos_item.shakes, .index-section-3_productos_item.postres {
@@ -807,8 +824,8 @@ footer .powered_texto {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "cremas chocolates" "dulces frutales";
-    padding-inline: 7rem;
-    gap: 4rem;
+    padding-inline: 4rem;
+    gap: 0rem;
   }
   .index-section-1_helados_sabores_subtitulo {
     font-size: 1.4rem;
@@ -818,9 +835,9 @@ footer .powered_texto {
     font-size: 2.5rem;
   }
   .index-section-3_productos {
-    padding-inline: 4rem;
+    padding-inline: 1rem;
   }
-  .index-section-3_productos_item_img_texto {
+  .index-section-3_productos_item_texto {
     font-size: 1.4rem;
   }
   /*INDEX FOOTER*/
@@ -872,14 +889,18 @@ footer .powered_texto {
     font-size: 1.2rem;
   }
   .index-section-1_helados {
-    padding-inline: 2rem;
+    padding-inline: 0rem;
   }
   /* INDEX PRODUCTOS*/
   .index-section-3_productos {
-    padding-inline: 2rem;
+    padding-inline: 0rem;
   }
-  .index-section-3_productos_productos_item_img_texto {
+  .index-section-3_productos_item_texto {
     font-size: 1rem;
+  }
+  .index-section-3_productos_item_img_animacion {
+    --b: 8px;
+    --g: 5px;
   }
   .index-section-3_titulo {
     font-size: 2.25rem;
@@ -959,8 +980,14 @@ footer .powered_texto {
   .index-section-3_productos {
     padding-inline: 0rem;
   }
-  .index-section-3_productos_item_img_texto {
+  .index-section-3_productos_item_texto {
     font-size: 0.9rem;
+  }
+  .index-section-3_productos_item_img {
+    display: block !important;
+  }
+  .index-section-3_productos_item_img_animacion {
+    display: none !important;
   }
   /* INDEX DELIVERY */
   .index-section-4 {
@@ -1053,7 +1080,7 @@ footer .powered_texto {
   .delivery_titular_verde {
     font-size: 1.7rem;
   }
-  .index-section-3_productos_item_img_texto {
+  .index-section-3_productos_item_texto {
     font-size: 0.8rem;
   }
   /*DELIVERY SECTION 1*/
