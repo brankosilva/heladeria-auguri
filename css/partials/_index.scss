@@ -412,7 +412,9 @@ header {
 
             &:hover {
                 .letter {
-                    transform: translateY(-200%);
+                    transform: translateY(-5%);
+                    color:$color-rojo;
+                    transition: 0.2s;
                 }
             }
         }
@@ -432,7 +434,9 @@ header {
 
             &:hover {
                 .letter {
-                    transform: translateY(-200%);
+                    transform: translateY(-5%);
+                    color:$color-rojo;
+                    transition: 0.2s;
                 }
             }
         }
@@ -461,7 +465,9 @@ header {
 
             &:hover {
                 .letter {
-                    transform: translateY(-200%);
+                    transform: translateY(-5%);
+                    color:$color-rojo;
+                    transition: 0.2s;
                 }
             }
         }

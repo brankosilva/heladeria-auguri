@@ -463,7 +463,9 @@ header .nav-link {
   transform: translateY(40%);
 }
 .delivery_titular_negro_retiras_letras:hover .letter {
-  transform: translateY(-200%);
+  transform: translateY(-5%);
+  color: #ff2a40;
+  transition: 0.2s;
 }
 .delivery_titular_negro_llevamos {
   margin-bottom: -2%;
@@ -477,7 +479,9 @@ header .nav-link {
   transform: translateY(40%);
 }
 .delivery_titular_negro_llevamos_letras:hover .letter {
-  transform: translateY(-200%);
+  transform: translateY(-5%);
+  color: #ff2a40;
+  transition: 0.2s;
 }
 .delivery_titular_negro_retiras, .delivery_titular_negro_llevamos {
   font-size: 4.75rem;
@@ -498,7 +502,9 @@ header .nav-link {
   transform: translateY(40%);
 }
 .delivery_titular_verde_letras:hover .letter {
-  transform: translateY(-200%);
+  transform: translateY(-5%);
+  color: #ff2a40;
+  transition: 0.2s;
 }
 
 /*NOSOTROS-HEADER----------------------------------------*/
