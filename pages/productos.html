@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="../img/logos/logo.png" type="image/x-icon">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <meta name="description" content="Disfruta de nuestros postres helados, shakes y bombones">
@@ -132,8 +133,9 @@
 
         <section class="productos-section-2">
             <div class="container">
-                <h1 id="shakes" class="productos-section-2_titulo"> SHAKES</h1>
-                <div class="productos-section-2_productos">
+                <h1 id="shakes" class="productos-section-2_titulo" data-aos="fade-up"> SHAKES</h1>
+
+                <div class="productos-section-2_productos" data-aos="fade-up">
 
                     <div class="productos-section-2_productos_item">
                         <img class="productos-section-2_productos_item_img" src="../img/postres/milkshakes.png" alt="milk-shakes">
@@ -153,8 +155,9 @@
 
                 </div>
 
-                <h1 id="bombones" class="productos-section-2_titulo"> BOMBONES</h1>
-                <div class="productos-section-2_productos">
+                <h1 id="bombones" class="productos-section-2_titulo" data-aos="fade-up"> BOMBONES</h1>
+
+                <div class="productos-section-2_productos" data-aos="fade-up">
 
                     <div class="productos-section-2_productos_item">
                         <img class="productos-section-2_productos_item_img" src="../img/postres/frambuesas-chocolate.png" alt="frambuesa-chocolate">
@@ -182,8 +185,9 @@
 
                 </div>
 
-                <h1 id="postres" class="productos-section-2_titulo"> POSTRES HELADOS</h1>
-                <div class="productos-section-2_productos postres">
+                <h1 id="postres" class="productos-section-2_titulo" data-aos="fade-up"> POSTRES HELADOS</h1>
+
+                <div class="productos-section-2_productos postres" data-aos="fade-up">
 
                     <div class="productos-section-2_productos_item">
                         <img class="productos-section-2_productos_item_img" src="../img/postres/almendrado.png" alt="almendrado">
@@ -210,7 +214,7 @@
     <footer id="mapa">
         
         <div class="container">
-            <div class="footer_columnas">
+            <div class="footer_columnas" data-aos="fade-up">
 
                 <div class="footer_columnas_1">
                     <img class="footer_columnas_1_img" src="../img/logos/logo1.png" alt="logo auguri">
@@ -260,5 +264,9 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script> 
 </body>
 </html>
