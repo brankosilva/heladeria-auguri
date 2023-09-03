@@ -85,8 +85,8 @@ footer {
         font-size: 1.5rem;
     
         & a:hover {
-            scale: 1.1;
-            transition: .2s;
+            scale: 1.2;
+            transition: .5s;
         }
     
         &_boton {
@@ -96,7 +96,11 @@ footer {
             .bi.bi-facebook,
             .bi.bi-instagram,
             .bi.bi-bicycle {
-            color: $color-blanco;
+                color: $color-blanco;
+
+                &:hover {
+                    color: $color-verde;
+                }
             }
         }
     }

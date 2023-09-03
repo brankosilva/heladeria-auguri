@@ -854,8 +854,8 @@ footer .botones_redes {
   font-size: 1.5rem;
 }
 footer .botones_redes a:hover {
-  scale: 1.1;
-  transition: 0.2s;
+  scale: 1.2;
+  transition: 0.5s;
 }
 footer .botones_redes_boton {
   margin-inline: 0.2rem;
@@ -865,6 +865,11 @@ footer .botones_redes_boton .bi.bi-facebook,
 footer .botones_redes_boton .bi.bi-instagram,
 footer .botones_redes_boton .bi.bi-bicycle {
   color: #ffffff;
+}
+footer .botones_redes_boton .bi.bi-facebook:hover,
+footer .botones_redes_boton .bi.bi-instagram:hover,
+footer .botones_redes_boton .bi.bi-bicycle:hover {
+  color: #009246;
 }
 footer .powered {
   background-color: #009246;
