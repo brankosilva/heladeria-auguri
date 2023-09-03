@@ -39,6 +39,24 @@
                     @include indice-p;
                 }
             }
+
+            &.primero {
+                -webkit-animation: bounce-in-right 2s both;
+	            animation: bounce-in-right 2s both;
+                animation-delay: 1.6s;
+            }
+
+            &.segundo {
+                -webkit-animation: bounce-in-right 2s both;
+	            animation: bounce-in-right 2s both;
+                animation-delay: 1.7s;
+            }
+
+            &.tercero {
+                -webkit-animation: bounce-in-right 2s both;
+	            animation: bounce-in-right 2s both;
+                animation-delay: 1.8s;
+            }
         }
     }
 }

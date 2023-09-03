@@ -178,6 +178,43 @@ p {
     animation-timing-function: ease-out;
   }
 }
+/* animaciones indice pagina productos y sabores"*/
+@keyframes bounce-in-right {
+  0% {
+    transform: translateX(600px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: translateX(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: translateX(68px);
+    animation-timing-function: ease-in;
+  }
+  72% {
+    transform: translateX(0);
+    animation-timing-function: ease-out;
+  }
+  81% {
+    transform: translateX(32px);
+    animation-timing-function: ease-in;
+  }
+  90% {
+    transform: translateX(0);
+    animation-timing-function: ease-out;
+  }
+  95% {
+    transform: translateX(8px);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateX(0);
+    animation-timing-function: ease-out;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -685,6 +722,22 @@ header .nav-link {
 .sabores-section-1_indice_item:hover p {
   color: #009246;
 }
+.sabores-section-1_indice_item.primero {
+  animation: bounce-in-right 2s both;
+  animation-delay: 1.6s;
+}
+.sabores-section-1_indice_item.segundo {
+  animation: bounce-in-right 2s both;
+  animation-delay: 1.7s;
+}
+.sabores-section-1_indice_item.tercero {
+  animation: bounce-in-right 2s both;
+  animation-delay: 1.8s;
+}
+.sabores-section-1_indice_item.cuarto {
+  animation: bounce-in-right 2s both;
+  animation-delay: 1.9s;
+}
 
 /*SABORES MAIN SECTION 2  -------------------------------------------*/
 .sabores-section-2_sabores_item_img:hover {
@@ -746,6 +799,18 @@ header .nav-link {
 }
 .productos-section-1_indice_item:hover p {
   color: #009246;
+}
+.productos-section-1_indice_item.primero {
+  animation: bounce-in-right 2s both;
+  animation-delay: 1.6s;
+}
+.productos-section-1_indice_item.segundo {
+  animation: bounce-in-right 2s both;
+  animation-delay: 1.7s;
+}
+.productos-section-1_indice_item.tercero {
+  animation: bounce-in-right 2s both;
+  animation-delay: 1.8s;
 }
 
 /*PRODUCTOS MAIN SECTION 2  -------------------------------------------*/
