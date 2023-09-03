@@ -336,10 +336,12 @@ header .menu_mobile .navbar .container.mobile {
 }
 header .menu_mobile .navbar .container.mobile a .logo-mobile {
   max-width: 30%;
+  animation: rotate-vert-center 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
 header .menu_mobile .navbar .container.mobile .navbar-toggler {
   background-color: #ffffff;
   color: #009246;
+  animation: fade-in-left 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 header .menu_mobile .navbar .container.mobile .navbar-collapse .navbar-nav {
   --bs-nav-link-hover-color: rgb(239 4 4);
