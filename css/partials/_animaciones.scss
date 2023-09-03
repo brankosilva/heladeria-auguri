@@ -1,5 +1,3 @@
-/* animaciones */
-
 
  @-webkit-keyframes bounce-in-left {
     0% {
@@ -53,7 +51,7 @@
               animation-timing-function: ease-out;
     }
   }
-  
+
   @keyframes bounce-in-left {
     0% {
       -webkit-transform: translateX(-600px);
