@@ -101,15 +101,18 @@ p {
 }
 
 /* BOTON WPP */
-.bi.bi-whatsapp {
+.material-symbols-outlined {
   position: fixed;
   right: 2rem;
   bottom: 2rem;
   transition: 0.2s;
   color: #009246;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
-.bi.bi-whatsapp:hover {
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+.material-symbols-outlined:hover {
   scale: 1.1;
 }
 
