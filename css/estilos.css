@@ -239,6 +239,7 @@ header {
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed;
+  position: relative;
 }
 header .titulo-header {
   color: #ffffff;
@@ -349,6 +350,17 @@ header .menu_mobile .navbar .container.mobile .navbar-collapse .navbar-nav {
 }
 header .menu_mobile .navbar .container.mobile .navbar-collapse .navbar-nav .nav-link.active, header .menu_mobile .navbar .container.mobile .navbar-collapse .navbar-nav .nav-link.show {
   color: rgb(0, 146, 87);
+}
+header .titulo-header-index {
+  color: #ffffff;
+  background-color: rgba(105, 105, 105, 0.363);
+  text-align: center;
+  position: absolute;
+  top: 52%;
+  width: 100%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 header .nav-link {
   color: #ffffff;
