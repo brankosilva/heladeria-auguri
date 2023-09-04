@@ -87,3 +87,19 @@
     }  
 }
 
+/* boton subir al header */
+
+.bi.bi-arrow-up-circle {
+    position: fixed;
+    left: 2rem;
+    bottom: 1.5rem;
+    transition: 0.2s;
+    color: #009246;
+    font-size: 1.5rem;
+    z-index: 20;
+
+    &:hover {
+        scale: 1.1;
+    } 
+}
+

@@ -121,6 +121,20 @@ p {
   scale: 1.1;
 }
 
+/* boton subir al header */
+.bi.bi-arrow-up-circle {
+  position: fixed;
+  left: 2rem;
+  bottom: 1.5rem;
+  transition: 0.2s;
+  color: #009246;
+  font-size: 1.5rem;
+  z-index: 20;
+}
+.bi.bi-arrow-up-circle:hover {
+  scale: 1.1;
+}
+
 /* index animaciones navbar */
 @keyframes fade-in-left {
   0% {
