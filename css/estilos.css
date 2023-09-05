@@ -611,8 +611,8 @@ header .nav-link {
           user-select: none;
 }
 .delivery_titular_negro_retiras_letras .letter {
-  transition: ease-out 1s;
-  transform: translateY(40%);
+  transition: ease-out 0.3s;
+  transform: translateY(15%);
 }
 .delivery_titular_negro_retiras_letras:hover .letter {
   transform: translateY(-5%);
@@ -627,8 +627,8 @@ header .nav-link {
           user-select: none;
 }
 .delivery_titular_negro_llevamos_letras .letter {
-  transition: ease-out 1s;
-  transform: translateY(40%);
+  transition: ease-out 0.3s;
+  transform: translateY(15%);
 }
 .delivery_titular_negro_llevamos_letras:hover .letter {
   transform: translateY(-5%);
@@ -650,8 +650,8 @@ header .nav-link {
           user-select: none;
 }
 .delivery_titular_verde_letras .letter {
-  transition: ease-out 1s;
-  transform: translateY(40%);
+  transition: ease-out 0.3s;
+  transform: translateY(15%);
 }
 .delivery_titular_verde_letras:hover .letter {
   transform: translateY(-5%);
