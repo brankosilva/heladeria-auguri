@@ -263,6 +263,116 @@
                   animation-timing-function: ease-out;
         }
       }
+
+@mixin sabores-productos-animacion-entrada {
+        -webkit-animation: bounce-in-right 2s both;
+	animation: bounce-in-right 2s both;
+}    
+
+
+/* animaciones navbar */
+
+@mixin navbar-entrada {
+        -webkit-animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@mixin navbar-ratacion-logo {
+        -webkit-animation: rotate-vert-center 2s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	animation: rotate-vert-center 2s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+
+
+/* animaciones index-sabores-imagenes */
+
+@mixin index-sabores-img-animaciones {
+        --color: #009246; /* the color of the border */
+        --border: 8px;   /* the thickness of the border */
+        --offset: 20px;   /* control the movement of the border */
+        --gap: 4px;       /* the gap on hover */
+        
+        border-radius: 50%;
+        cursor: pointer;
+        padding: calc(var(--border) + var(--gap));
+        border: var(--offset) solid #0000;
+        --_m: radial-gradient(50% 50%, #000 calc(100% - var(--offset)),#0000 calc(100% - var(--border)));
+        -webkit-mask: var(--_m);
+                mask: var(--_m);
+        --_g: #0000 calc(99% - var(--border)), var(--color) calc(100% - var(--border)) 99%,#0000;
+        --_s: var(--offset);
+        --_r: 100% 100% at;
+        background:
+                radial-gradient(var(--_r) 0    0   ,var(--_g)) calc(100% + var(--_s)) calc(100% + var(--_s)),
+                radial-gradient(var(--_r) 100% 0   ,var(--_g)) calc(0%   - var(--_s)) calc(100% + var(--_s)),
+                radial-gradient(var(--_r) 0    100%,var(--_g)) calc(100% + var(--_s)) calc(0%   - var(--_s)),
+                radial-gradient(var(--_r) 100% 100%,var(--_g)) calc(0%   - var(--_s)) calc(0%   - var(--_s));
+        background-size: 50% 50%;
+        background-repeat: no-repeat;
+        transition: .4s;
+}
+
+
+
+/* animaciones index-productos-imagenes */
+
+@mixin index-productos-img-animaciones {
+        border-radius: 10px;
+        --c: #009246; /* the border color */
+        --b: 10px;    /* the border thickness*/
+        --g: 5px;     /* the gap on hover */
+        
+        padding: calc(var(--g) + var(--b));
+        --_g: #0000 25%,var(--c) 0;
+        background: 
+                conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g))
+                var(--_i,200%) 0  /200% var(--_i,var(--b))  no-repeat,
+                conic-gradient(            at bottom var(--b) left  var(--b),var(--_g))
+                0   var(--_i,200%)/var(--_i,var(--b)) 200%  no-repeat;
+        transition: .3s, background-position .3s .3s;
+        cursor: pointer;
+}
+
+
+
+/* animaciones delivery-imagenes */
+
+@mixin animaciones-delivery-imagenes {
+        grid-area: 1/1;
+        width: 400px;
+        aspect-ratio: 1;
+        object-fit: cover;
+        border-radius: 50%;
+        transform: translate(var(--_x,0),var(--_y,0));
+        cursor: pointer;
+        z-index: 0;
+        transition: .3s, z-index 0s .3s;
+        }
+        .delivery-imagenes img:hover {
+        --_i: 1;
+        z-index: 1;
+        transition: transform .2s, clip-path .3s .2s, z-index 0s;
+        }
+        .delivery-imagenes:hover img {
+        transform: translate(0,0);
+        }
+        .delivery-imagenes > img:nth-child(1) {
+        clip-path: polygon(50% 50%,calc(50%*var(--_i,0)) calc(120%*var(--_i,0)),0 calc(100%*var(--_i,0)),0 0,100% 0,100% calc(100%*var(--_i,0)),calc(100% - 50%*var(--_i,0)) calc(120%*var(--_i,0)));
+        --_y: calc(-1*var(--g))
+        }
+        .delivery-imagenes > img:nth-child(2) {
+        clip-path: polygon(50% 50%,calc(100% - 120%*var(--_i,0)) calc(50%*var(--_i,0)),calc(100% - 100%*var(--_i,0)) 0,100% 0,100% 100%,calc(100% - 100%*var(--_i,0)) 100%,calc(100% - 120%*var(--_i,0)) calc(100% - 50%*var(--_i,0)));
+        --_x: var(--g)
+        }
+        .delivery-imagenes > img:nth-child(3) {
+        clip-path: polygon(50% 50%,calc(100% - 50%*var(--_i,0)) calc(100% - 120%*var(--_i,0)),100% calc(100% - 120%*var(--_i,0)),100% 100%,0 100%,0 calc(100% - 100%*var(--_i,0)),calc(50%*var(--_i,0)) calc(100% - 120%*var(--_i,0)));
+        --_y: var(--g)
+        }
+        .delivery-imagenes > img:nth-child(4) {
+        clip-path: polygon(50% 50%,calc(120%*var(--_i,0)) calc(50%*var(--_i,0)),calc(100%*var(--_i,0)) 0,0 0,0 100%,calc(100%*var(--_i,0)) 100%,calc(120%*var(--_i,0)) calc(100% - 50%*var(--_i,0)));
+        --_x: calc(-1*var(--g))
+}
+
       
       
       
