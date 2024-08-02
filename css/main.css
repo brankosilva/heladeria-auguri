@@ -1,0 +1,992 @@
+/*CONFIGURACIONES GENERALES--------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+:root {
+    font-size: 16px;
+}
+
+h1 {
+    color: #1E1E1E;
+    font-weight: 700;
+    font-size: 3.25rem;
+    text-shadow: 0px 2px 4px rgb(0,0,0,0.40);
+    line-height: unset;
+}
+
+h2 {
+    color: #009246;
+    font-size: 3rem;
+    text-shadow: 0px 6px 6px rgb(0,0,0,0.40);
+    line-height: unset;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 2rem;
+    text-shadow: 0px 2px 4px rgb(0,0,0,0.40);
+    line-height: unset;
+    margin-bottom: 0 !important;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #1E1E1E;
+    margin-bottom: 0 !important;
+}
+
+.parrafo-footer {
+    font-weight: 200;
+    font-size: 0.85rem;
+    color: #ffffff;
+}
+
+/* CONFIGURACION HEADER GENERAL PC----------------------*/
+
+
+nav > ul {
+    display: flex;
+    color: #ffffff;
+    align-items: center;
+    list-style-type: none;
+    margin-bottom: 0 !important;
+    padding-left: 0 !important;
+
+}
+
+nav > ul > .links {
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+}
+
+nav > ul > .logo {
+    display: flex;
+    padding-inline: 1rem;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+}
+
+.links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    text-shadow: 0px 2px 4px rgb(0,0,0,0.40);
+}
+
+.artesanal {
+    text-align: left;
+    font-weight: 700;
+    max-width: 0rem;
+    min-width: 8.5rem;
+    text-shadow: 0px 2px 4px rgb(0,0,0,0.40);
+}
+
+.menu_item.active a,
+.menu_item a:hover {
+    text-decoration: underline;
+}
+
+.menu_item:hover {
+    scale: 1.1;
+    transition: .3s;
+}
+
+
+.titulo-header {
+    color: #ffffff;
+    position: absolute;
+    margin: 0 3rem;
+    top: 75%;
+}
+
+/* CONFIGURACION HEADER GENERAL MOBILE----------------------*/
+
+.container.mobile {
+    padding-right: calc(var(--bs-gutter-x) * 2.5);
+    padding-left: calc(var(--bs-gutter-x) * 2.5);
+}
+
+.logo-mobile {
+    max-width: 30%;
+}
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 0.1;
+}
+
+.navbar-toggler {
+    background-color: #ffffff;
+    color: #009246;
+}
+
+.navbar {
+    --bs-navbar-toggler-padding-y: 0.25rem;
+    --bs-navbar-toggler-padding-x: 0.40rem;
+    --bs-navbar-toggler-font-size: none;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: rgb(0 146 87);
+}
+
+.navbar-nav {
+    --bs-nav-link-hover-color: rgb(239 4 4);
+    align-items: flex-end;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+.container.mobile {
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+}
+
+/* CONFIGURACION FOOOTER GENERAL---------------------------*/
+
+footer {
+    background-color: #1E1E1E;
+    position: relative;
+    color: #ffffff;
+    padding-top: 2rem;  
+}
+
+.footer-columnas {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.footer-columnas > * {
+    flex: 1;
+}
+
+
+/* CONFIGURACION FOOOTER COLUMNA 1---------------------------*/
+
+.logo-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.desde {
+    font-weight: 700;
+    text-shadow: 0px 2px 4px rgb(0,0,0,0.40);
+    text-align: center;
+}
+
+.helado-artesanal {
+    font-weight: 200;
+    text-shadow: 0px 2px 4px rgb(0,0,0,0.40);
+    text-align: center;
+}
+
+.img-logofooter {
+    width: 40%;
+    margin-bottom: 1rem;
+}
+
+/* CONFIGURACION FOOOTER COLUMNA 2---------------------------*/
+
+.sobre-nosotros {
+    display: flex;
+    flex-direction: column;
+}
+
+.nosotros-footer {
+    margin-bottom: 0.5rem;
+}
+
+/* CONFIGURACION FOOOTER COLUMNA 3---------------------------*/
+
+.ubicacion-mapa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+iframe {
+    width: 100%;
+    max-height: 40vh;
+    border-radius: 20px;
+}
+
+.parrafo-footer.direccion {
+    padding-inline: 2.2rem;
+    text-align: center;
+}
+
+/* CONFIGURACION FOOOTER REDES---------------------------*/
+
+.botones-redes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.botones-redes a:hover {
+    scale: 1.1;
+    transition: .2s;
+}
+
+.boton-instagram,
+.boton-facebook,
+.boton-pedidosya {
+    margin-inline: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.bi.bi-facebook,
+.bi.bi-instagram,
+.bi.bi-bicycle {
+    color: #ffffff;
+}
+
+.powered {
+    background-color: #009246;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+}
+
+.powered-texto {
+    margin-bottom: 0rem;
+}
+
+/* BOTON WPP ------------------------------------------------*/
+
+.bi.bi-whatsapp {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    transition: .2s;
+    color: #25d366;
+    font-size: 2rem;
+}
+
+.bi.bi-whatsapp:hover {
+    scale: 1.1;
+}
+
+/* FIN CONFIGURACIONES GENERALES-------------------------*/
+
+/* INDEX ------------------------------------------------*/
+
+/*INDEX-HEADER-------------------------------------------*/
+
+.header-index {
+    background-image: url("../img/PORTADAS/portada-header-index.jpg");
+    min-height: 100vh;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+/*INDEX MAIN SECTION 1  -------------------------------------------*/
+
+.index-section-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-block: 2rem;
+}
+
+.nuestros-sabores {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 0 !important;
+    padding-inline: 3rem;
+}
+
+.helados {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "enlace-cremas enlace-chocolates enlace-dulces enlace-frutales";
+}
+
+.enlace-cremas {
+    grid-area: enlace-cremas;
+}
+
+.enlace-chocolates {
+    grid-area: enlace-chocolates;
+}
+
+.enlace-dulces {
+    grid-area: enlace-dulces;
+}
+
+.enlace-frutales {
+    grid-area: enlace-frutales;
+}
+
+.enlace-cremas,
+.enlace-chocolates,
+.enlace-dulces,
+.enlace-frutales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.sabores-helados {
+    font-size: 1.5rem;
+    color: #1E1E1E;
+    text-shadow: 0px 2px 2px rgb(0,0,0,0.40);
+}
+
+.carousel-control-next {
+    right: -50px;
+}
+
+.carousel-control-prev {
+    left: -50px;
+}
+
+.carousel-indicators {
+    bottom: -42px;
+}
+
+.helados a {
+    transition: .5s;
+}
+
+.helados a:hover {
+    scale: 1.05;
+}
+
+.boton-ver {
+    text-decoration: none;
+    color: #009246;
+    background-color: #ffffff;
+    border: 2px solid #009246;
+    padding: 0.3rem;
+    border-radius: 20px;
+    width: 6rem;
+    font-weight: 700;
+    text-align: center;
+    transition: .6s;
+}
+
+.boton-ver:hover {
+    background-color:#009246;
+    color: #ffffff;  
+}
+
+.index-section-1-mobile {
+    display: none;
+    gap: 2rem;
+}
+
+/*INDEX MAIN SECTION 2  -------------------------------------------*/
+
+.index-section-2 {
+    background-image: url(../img/PORTADAS/portada-sect-2.png);
+    min-height: 70vh;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/*INDEX MAIN SECTION 3  -------------------------------------------*/
+
+.index-section-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+
+.bandera-top {
+    position: absolute;
+    bottom: 100%;
+    max-height: 1.5%;
+    width: 100%;
+}
+
+.productos {
+    padding-top: 1rem;
+    align-self: flex-start;
+    margin-bottom: 0 !important;
+}
+
+.productos-tipos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-inline: 6rem;
+}
+
+.shakes,
+.bombones,
+.postres-helados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.shakes a,
+.bombones a,
+.postres-helados a {
+    text-decoration: none;
+    transition: .5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.productos-texto {
+    font-weight: 600;
+    text-shadow: 0px 1px 1px rgb(0,0,0,0.40);
+    font-size: 1.5rem;
+}
+
+.shakes a:hover { 
+    scale: 1.05;
+}
+
+.bombones a:hover { 
+    scale: 1.05;
+}
+
+.postres-helados a:hover { 
+    scale: 1.05;
+}
+
+.w-100 {
+    width: unset !important;
+}
+
+.img-shakes,
+.img-bombones,
+.img-postres {
+    border-radius: 20px;
+}
+
+.shakes,
+.postres-helados {
+    margin-top: 5rem;
+}
+
+.boton-productos { 
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.bandera-bottom {
+    position: absolute;
+    top: 99%;
+    max-height: 1.5%;
+    width: 100%;
+}
+
+
+
+/*INDEX MAIN SECTION 4  -------------------------------------------*/
+
+.index-section-4 {
+    background-image: url(../img/delivery/auguri-delivery-index.png);
+    min-height: 80vh;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 3rem;
+}
+
+.te-lo-llevamos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.retiras {
+    margin-bottom: -8%;
+}
+
+.llevamos {
+    margin-bottom: -4%;
+}
+
+.pedido {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 0 !important;
+    margin-top: unset;
+}
+
+.retiras,
+.llevamos {
+    font-size: 4.75rem;
+    text-align: center;
+}
+
+.botones-delivery {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.botones-delivery a {
+    transition: .5s;
+}
+
+.boton-peya {
+    background-image: url(../img/redes/pedidosya.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #ff2a40;
+    border-radius: 20px;
+    min-width: 10rem;
+    min-height: 2.5rem;
+    box-shadow: 1px 4px 6px rgb(0,0,0,0.40);
+}
+
+.boton-delivery-propio {
+    text-decoration: none;
+    color: #009246;
+    text-align: center;
+    background-color: #ffffff;
+    border: 2px solid #009246;
+    padding: 0.5rem;
+    border-radius: 20px;
+    width: 10rem;
+    font-weight: 800;
+    box-shadow: 1px 4px 6px rgb(0,0,0,0.40);
+}
+
+.botones-delivery a:hover {
+    scale: 1.05;
+}
+
+
+
+
+/*NOSOTROS-----------------------------------------------*/
+
+/*NOSOTROS-HEADER----------------------------------------*/
+
+.header-nosotros {
+    background-image: url("../img/PORTADAS/portada-nosotros.jpg");
+    min-height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+.nosotros-section-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-block: 3rem;
+}
+
+.nosotros-titulo {
+    line-height: 3rem;
+    margin-bottom: 0 !important;
+    font-weight: 700;
+}
+
+.texto-nosotros,
+.imagen-nosotros {
+    width: 50%;
+}
+
+.parrafo-nosotros {
+    margin-block: 2rem;
+    margin-right: 3rem;
+}
+
+.imagen-nosotros{
+    display: flex;
+    justify-content: center;
+}
+
+.img-nosotros {
+    border-radius: 30px;
+    width: 80%;
+}
+
+
+
+
+
+
+
+
+
+/*SABORES------------------------------------------------*/
+/*SABORES-HEADER-----------------------------------------*/
+
+.header-sabores {
+    background-image: url("../img/PORTADAS/portada-sabores.jpg");
+    min-height: 60vh;
+    position: relative;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+
+
+
+
+
+/*PRODUCTOS----------------------------------------------*/
+/*PRODUCTOS-HEADER---------------------------------------*/
+
+.header-productos {
+    background-image: url("../img/PORTADAS/portada-productos.jpg");
+    min-height: 60vh;
+    position: relative;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+/*PRODUCTOS MAIN SECTION 1  -------------------------------------------*/
+
+.productos-section-1 {
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.contenedor-grid {
+    width: 50%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    column-gap: 0.5rem;
+}
+
+.shakes-grid {
+    grid-area: shakes;
+}
+
+.bombones-grid {
+    grid-area: bombones;
+}
+
+.postres-helados-grid{
+    grid-area: postres;
+}
+
+.shakes-grid,
+.bombones-grid,
+.postres-helados-grid {
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.texto-grid {
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+
+
+
+
+/*DELIVERY-----------------------------------------------*/
+/*DELIVERY-HEADER----------------------------------------*/
+
+.header-delivery {
+    background-image: url("../img/PORTADAS/portada-delivery.jpg");
+    min-height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/*DELIVERY MAIN SECTION 1  -------------------------------------------*/
+
+.delivery-section-1 {
+    padding-block: 2rem;
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.delivery-imagenes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}   
+
+.imagen-delivery {
+    border-radius: 30px;
+    flex: 1;
+    max-width: 20%;
+}
+
+.imagen-delivery:hover {
+    scale: 1.04;
+    transition: .5s;
+}
+
+
+
+
+/* MEDIAAAAA QUERIIIIIIIIIIIIIEEEEES */
+
+
+
+/* MEDIA QUERIES MAX-WIDTH 992*/
+
+@media screen and (max-width: 992px) {
+
+    /*INDEX NAV MOBILE-PC*/
+    .menu-mobile {
+        display: block;
+    }
+
+    .menu-pc {
+        display: none;
+    }
+
+    /*HEADER */
+
+    .titulo-header {
+        margin: 0 0rem;
+    }
+
+    /*INDEX SECTION 1*/
+
+    .nuestros-sabores {
+        font-size: 2.5rem;
+    }
+
+    .sabores-helados {
+        font-size: 1.4rem;
+    }    
+
+    .helados { 
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "enlace-cremas enlace-chocolates" 
+        "enlace-dulces enlace-frutales";
+        padding-inline: 7rem;
+        gap: 4rem;
+        }
+
+    /*INDEX SECTION 3*/
+
+    .productos {
+        font-size: 2.5rem;
+    }
+
+    .productos-tipos {
+        padding-inline: 4rem;
+    }
+
+    .productos-texto {
+        font-size: 1.4rem
+    }
+
+/*INDEX FOOTER*/
+    .parrafo-footer.direccion {
+        padding-inline: unset;
+    }
+
+/*NOSOTROS SECTION 1*/
+
+    .imagen-nosotros {
+        display: none;
+    }
+
+    .texto-nosotros {
+        width: 100%;
+    } 
+}
+
+
+/* MEDIA QUERIES MAX-WIDTH 768*/
+
+@media screen and (max-width: 767px) {
+
+    /* INDEX-NOSOTROS-SABORES-PRODUCTOS-DELIVERY*/
+
+    /* INDEX SABORES */
+
+    .nuestros-sabores {
+        font-size: 2.25rem;
+    }
+
+    .sabores-helados {
+        font-size: 1.2rem;
+    }
+
+    .helados {
+        padding-inline: 2rem;
+    }
+
+    /* INDEX PRODUCTOS*/
+
+    .productos-texto {
+        font-size: 1rem;
+    }
+
+    .productos {
+        font-size: 2.25rem;
+    }
+
+    /* INDEX DELIVERY */
+
+    .retiras, .llevamos {
+        font-size: 3.7rem;
+    }
+
+    .pedido {
+        font-size: 2rem;
+    }
+
+    /* INDEX FOOTER*/
+    .footer-columnas {
+        flex-direction: column;
+        align-items: center;
+        padding-inline: 3rem;
+    }
+
+    .nosotros-footer,
+    .parrafo-footer {
+        text-align: center;
+    }
+}
+
+
+
+/* MEDIA QUERIES MAX-WIDTH 576*/
+
+@media screen and (max-width: 576px) {
+
+    /* INDEX-NOSOTROS-SABORES-PRODUCTOS-DELIVERY*/
+
+    .container {
+        padding-inline: 3rem;
+    }
+
+    .container.mobile {
+        padding-right: calc(var(--bs-gutter-x) * 1);
+        padding-left: calc(var(--bs-gutter-x) * 1);
+    }
+
+     /*INDEX SECTION 1*/
+    .index-section-1 { 
+        display: none;
+        }
+
+    .index-section-1-mobile {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-block: 2rem;
+    }
+
+        /* INDEX DELIVERY */
+
+    .retiras, .llevamos {
+        font-size: 2.3rem;
+    }
+    
+    .pedido {
+        font-size: 1.7rem;
+    }
+
+
+    /* NOSOTROS TITULO HEADER */
+
+    .titulo-header {
+        margin: 0 0rem;
+        top: 75%;
+        font-size: 2.75rem;
+    }
+
+    .nosotros-titulo {
+        line-height: 2rem;
+        font-size: 2rem;
+    }
+
+    .auguri-titulo {
+        font-size: 1.8rem;
+    }
+
+    /* DELIVERY SECTION 1 */
+
+    .imagen-delivery {
+        max-width: 35%;
+    }
+}
